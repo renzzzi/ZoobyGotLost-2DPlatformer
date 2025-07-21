@@ -1,0 +1,80 @@
+#hud-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+}
+
+#score-container {
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+}
+
+#score-container Label {
+    font-size: 40px;
+    text-shadow: 3px 5px 2px rgba(20, 20, 20, 0.4);
+    -unity-font-style: bold;
+    color: whitesmoke;
+    margin-left: 20px;
+}
+
+#health-bar {
+    width: 40%;
+    height: 50px;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 5px;
+    padding: 6px;
+    overflow: hidden;
+    flex: none;
+    margin-top: 7px;
+    margin-right: 20px;
+}
+
+#health-bar-fill {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.2s ease-in-out;
+}
+
+#health-bar-value {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 30px;
+    left: 46%;
+    top: 0;
+    -unity-font-style: bold;
+    text-shadow: 3px 2px 4px rgba(20, 20, 20, 0.7);
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    color: whitesmoke;
+    font-size: 40px;
+    -unity-font-style: bold;
+}
+
+.button {
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}

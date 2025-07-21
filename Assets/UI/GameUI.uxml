@@ -1,0 +1,33 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameUI_Style.uss?fileID=7433441132597879392&amp;guid=3cf00ee86669c9e49aeaff15cb2b9ca8&amp;type=3#GameUI_Style" />
+    <ui:VisualElement name="root-container" style="flex-grow: 1;">
+        <ui:VisualElement name="hud-container" style="flex-grow: 1;">
+            <ui:VisualElement name="score-container" enabled="true" style="flex-grow: 0;">
+                <ui:Label text="Keys:" name="keys-label" enabled="true" />
+                <ui:Label text="0" name="score-count" />
+                <ui:Label text="|" name="score-separator" />
+                <ui:Label text="5" name="score-total" />
+            </ui:VisualElement>
+            <ui:VisualElement name="health-bar" enabled="true">
+                <ui:VisualElement name="health-bar-fill" style="flex-grow: 1;" />
+                <ui:Label text="100" name="health-bar-value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="pause-menu-container" class="hidden menu" style="flex-grow: 1;">
+            <ui:Label text="GAME PAUSED" name="pause-title" class="title" />
+            <ui:Button text="Resume" name="resume-button" class="button" />
+            <ui:Button text="Exit" name="pause-exit-button" class="button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="win-menu-container" class="hidden menu" style="flex-grow: 1;">
+            <ui:Label text="YOU WIN!" name="win-title" class="title" />
+            <ui:Button text="Next Level" name="next-level-button" class="button" />
+            <ui:Button text="Retry" name="win-retry-button" class="button" />
+            <ui:Button text="Exit" name="win-exit-button" class="button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="gameover-menu-container" class="menu hidden" style="flex-grow: 1;">
+            <ui:Label text="GAME OVER" name="gameover-title" class="title" />
+            <ui:Button text="Retry" name="gameover-retry-button" class="button" />
+            <ui:Button text="Exit" name="gameover-exit-button" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
