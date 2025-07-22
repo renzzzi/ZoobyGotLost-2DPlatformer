@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: TarTile
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -6797452285249539742, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -1460734648, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -624177718, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: 1893810738, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: 2018112777, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -1705451475, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -1047665186, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -618053708, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: 182030986, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -1217622987, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -175815505, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -818928553, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: 1707898107, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -1392195466, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: -312067818, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  - {fileID: 1928240396, guid: 4951dab362d9e944ca0e080cfa4c0a1b, type: 3}
+  m_MinSpeed: 7
+  m_MaxSpeed: 7
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 1
+  m_TileAnimationFlags: 0

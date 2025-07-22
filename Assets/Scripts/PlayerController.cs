@@ -3,38 +3,53 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    // All the components
     [Header("Components")]
     private Rigidbody2D rigidBody;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private PlayerInput playerInput;
 
+    // Basic movement settings
     [Header("Movement Settings")]
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
 
+    // Stores all the needed components for checking the ground
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Vector2 groundCheckSize = new Vector2(0.5f, 0.1f);
 
+    // Stores all the settings that involves making the jumps feel good and responsive
     [Header("Jump Tuning")]
     [Tooltip("Allows jumping for a short time after leaving a ledge.")]
     [SerializeField] private float coyoteTime;
     [Tooltip("Remembers a jump input for a short time before hitting the ground.")]
     [SerializeField] private float jumpBufferTime;
 
+    // Stores settings for the walking sound effect
     [Header("Walking SFX Settings")]
     [SerializeField] private float walkCooldown;
     private float walkTimer;
     private bool onGroundHitFlag = false;
 
+    /* Internal variables that stores crucial information, in order:
+     * 1. The direction in where the player will go based on the input of the user.
+     * 2. A flag telling whether the player is on the ground or not
+     * 3. Counts down from coyoteTime
+     * 4. Counts down from jumpBufferTime
+     * 5. A flag telling whether the player is jumping or not (The player might be falling
+     *    but isGrounded does not tell the whole story)
+     * 6. Stores the input action mapping for moving left and right (Which is a Vector2 
+     *    and the moveInput variable only stores the x-axis)
+     * 7. Stores the input action mapping for the jump button
+     */
     private float moveInput;
     private bool isGrounded;
     private float coyoteTimeCounter;
     private float jumpBufferCounter;
     private bool isJumping = false;
-
     private InputAction moveAction;
     private InputAction jumpAction;
 
@@ -50,6 +65,7 @@ public class PlayerController : MonoBehaviour
         jumpAction = playerInput.actions.FindAction("Jump");
     }
 
+    // InputAction variables apparently needs to be enabled
     private void OnEnable()
     {
         moveAction.Enable();
@@ -175,7 +191,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Draws a wireframe box in the editor to visualize the ground check area
+    // Draws a wireframe box in the scene to visualize the ground check area
     private void OnDrawGizmosSelected()
     {
         if (groundCheck == null) return;

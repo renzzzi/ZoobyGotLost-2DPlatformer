@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class TickDamage : MonoBehaviour
 {
-    [SerializeField] private int minDamage = 5;
-    [SerializeField] private int maxDamage = 9;
-    [SerializeField] private float damageInterval = 1.0f;
+    [SerializeField] private int minDamage;
+    [SerializeField] private int maxDamage;
+    [SerializeField] private float damageInterval;
     [SerializeField] private PlayerStats playerStats;
 
     private void OnTriggerEnter2D(Collider2D collision)
