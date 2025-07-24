@@ -45,7 +45,7 @@ public class GameUIController : MonoBehaviour
     }
 
     // OnEnable is for setting up UI and subscribing to events
-    void OnEnable()
+    private void OnEnable()
     {
         // --- UI Setup (same as before) ---
         var root = uiDocument.rootVisualElement;
@@ -69,16 +69,17 @@ public class GameUIController : MonoBehaviour
         gameoverRetryButton = root.Q<Button>("gameover-retry-button");
         gameoverExitButton = root.Q<Button>("gameover-exit-button");
 
+        gameoverRetryButton.clicked += LoadExampleScene;
         gameoverExitButton.clicked += ExitGame;
-        PlayerStats.OnPlayerDeath += ShowGameoverMenu;
+        PlayerStats.Instance.OnPlayerDeath += ShowGameoverMenu;
 
         // HUD
         HUDContainer = root.Q<VisualElement>("hud-container");
         keyCount = root.Q<Label>("score-count");
-        PlayerStats.OnKeyCollect += UpdateKeyCountDisplay;
+        PlayerStats.Instance.OnKeyCollect += UpdateKeyCountDisplay;
         healthBarFill = root.Q<VisualElement>("health-bar-fill");
         healthBarValue = root.Q<Label>("health-bar-value");
-        PlayerStats.OnDamageInflicted += UpdateHealthBar;
+        PlayerStats.Instance.OnDamageInflicted += UpdateHealthBar;
 
         DoorPortal.OnPlayerWin += ShowWinMenu;
 
@@ -90,16 +91,24 @@ public class GameUIController : MonoBehaviour
     }
 
     // OnDisable is called when the object is disabled. It's crucial for cleanup.
-    void OnDisable()
+    private void OnDisable()
     {
         // Unsubscribe from the events to prevent memory leaks and errors.
         resumeButton.clicked -= ResumeGame;
         pauseExitButton.clicked -= ExitGame;
         DoorPortal.OnPlayerWin -= ShowWinMenu;
-        PlayerStats.OnKeyCollect -= UpdateKeyCountDisplay;
-        PlayerStats.OnDamageInflicted -= UpdateHealthBar;
-        PlayerStats.OnPlayerDeath -= ShowGameoverMenu;
+        PlayerStats.Instance.OnKeyCollect -= UpdateKeyCountDisplay;
+        PlayerStats.Instance.OnDamageInflicted -= UpdateHealthBar;
+        PlayerStats.Instance.OnPlayerDeath -= ShowGameoverMenu;
         pauseAction.performed -= TogglePauseMenu;
+
+        gameoverRetryButton.clicked -= LoadExampleScene;
+    }
+
+    private void LoadExampleScene()
+    {
+        GameManager.Instance.LoadLevel();
+        AudioManager.Instance.RestartBackgroundMusic();
     }
 
     private void SetPauseState(bool pauseState)

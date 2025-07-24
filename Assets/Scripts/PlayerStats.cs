@@ -1,29 +1,42 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class PlayerStats : MonoBehaviour
 {
+    public static PlayerStats Instance { get; private set; }
+
     [SerializeField] private GameUIController gameUIController;
-    [SerializeField] private static int keyAmount = 0;
-    [SerializeField] private static float health = 100.0f;
+    [SerializeField] private float health;
+    private int keyAmount;
     private bool isDead = false;
     private int activeHazardTriggers = 0;
     private Coroutine damageCoroutine;
     private Coroutine playerHurtColorCoroutine;
 
-    public static int GetKeyAmount()
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public int GetKeyAmount()
     {
         return keyAmount;
     }
 
-    public static float GetHealth()
+    public float GetHealth()
     {
         return health;
     }
 
-    public static event Action<int> OnKeyCollect;
+    public event Action<int> OnKeyCollect;
 
     public void AddKey()
     {
@@ -32,7 +45,7 @@ public class PlayerStats : MonoBehaviour
     }
 
 
-    public static event Action<float> OnDamageInflicted;
+    public event Action<float> OnDamageInflicted;
     public void InflictDamage(int damageAmount)
     {
         health -= damageAmount;
@@ -78,10 +91,9 @@ public class PlayerStats : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSecondsRealtime(0.2f);
         GetComponent<SpriteRenderer>().color = Color.white;
-        StopCoroutine(playerHurtColorCoroutine);
     }
 
-    public static event Action OnPlayerDeath;
+    public event Action OnPlayerDeath;
     private void Update()
     {
         if (health <= 0 && !isDead)

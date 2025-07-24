@@ -22,7 +22,7 @@ public class DoorPortal : MonoBehaviour
             return;
         }
 
-        int currentKeyAmount = PlayerStats.GetKeyAmount();
+        int currentKeyAmount = PlayerStats.Instance.GetKeyAmount();
 
         if (currentKeyAmount >= keyRequired)
         {
