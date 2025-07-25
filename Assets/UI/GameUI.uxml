@@ -15,13 +15,12 @@
         </ui:VisualElement>
         <ui:VisualElement name="pause-menu-container" class="hidden menu" style="flex-grow: 1;">
             <ui:Label text="GAME PAUSED" name="pause-title" class="title" />
-            <ui:Button text="Resume" name="resume-button" class="button" />
+            <ui:Button text="Resume" name="pause-resume-button" class="button" />
             <ui:Button text="Exit" name="pause-exit-button" class="button" />
         </ui:VisualElement>
         <ui:VisualElement name="win-menu-container" class="hidden menu" style="flex-grow: 1;">
             <ui:Label text="YOU WIN!" name="win-title" class="title" />
-            <ui:Button text="Next Level" name="next-level-button" class="button" />
-            <ui:Button text="Retry" name="win-retry-button" class="button" />
+            <ui:Button text="Next Level" name="win-next-level-button" class="button" />
             <ui:Button text="Exit" name="win-exit-button" class="button" />
         </ui:VisualElement>
         <ui:VisualElement name="gameover-menu-container" class="menu hidden" style="flex-grow: 1;">

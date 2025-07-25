@@ -1,36 +1,27 @@
 using UnityEngine;
 
-public class ParallaxBackground : MonoBehaviour
+public class Parallax : MonoBehaviour
 {
-    [SerializeField] private Transform cameraTransform;
-
+    [Tooltip("The effect strength. 0 = no parallax (background is stationary). 1 = full parallax (background moves with the player).")]
+    [Range(0f, 1f)]
     [SerializeField] private float parallaxEffect;
 
-    private Vector3 startPosition;
-    private float length;
+    private Transform playerTransform;
+    private Vector3 lastPlayerPosition;
 
-    public void Awake()
+    void Start()
     {
-        startPosition = transform.position;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        playerTransform = transform.parent;
+
+        lastPlayerPosition = playerTransform.position;
     }
 
-    public void LateUpdate()
+    void Update()
     {
-        float distanceToMove = cameraTransform.position.x * parallaxEffect;
+        Vector3 backgroundMovement = playerTransform.position - lastPlayerPosition;
 
-        Vector3 newPosition = new Vector3(startPosition.x + distanceToMove, transform.position.y, transform.position.z);
-        transform.position = newPosition;
+        transform.position -= backgroundMovement * (1 - parallaxEffect);
 
-        float temp = cameraTransform.position.x * (1 - parallaxEffect);
-
-        if (temp > startPosition.x + length)
-        {
-            startPosition.x += length;
-        }
-        else if (temp < startPosition.x - length)
-        {
-            startPosition.x -= length;
-        }
+        lastPlayerPosition = playerTransform.position;
     }
 }

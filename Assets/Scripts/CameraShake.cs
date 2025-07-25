@@ -4,10 +4,15 @@ using System.Collections;
 public class CameraShake : MonoBehaviour
 {
     public static CameraShake Instance { get; private set; }
-    private Vector3 originalPosition;
+
+    [SerializeField] private float duration = 0.5f;
+    [SerializeField] private float magnitude = 0.1f;
+
+    private Vector3 baseLocalPosition;
+
+    private Vector3 shakeOffset = Vector3.zero;
+
     private Coroutine shakeCoroutine;
-    [SerializeField] private float duration;
-    [SerializeField] private float magnitude;
 
     private void Awake()
     {
@@ -19,12 +24,16 @@ public class CameraShake : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
 
     private void Start()
     {
-        originalPosition = transform.position;
+        baseLocalPosition = transform.localPosition;
+    }
+
+    private void LateUpdate()
+    {
+        transform.localPosition = baseLocalPosition + shakeOffset;
     }
 
     public void TriggerShake()
@@ -32,26 +41,27 @@ public class CameraShake : MonoBehaviour
         if (shakeCoroutine != null)
         {
             StopCoroutine(shakeCoroutine);
+            shakeCoroutine = null;
         }
-        
         shakeCoroutine = StartCoroutine(Shake());
     }
 
     private IEnumerator Shake()
     {
         float timeElapsed = 0.0f;
-        
+
         while (timeElapsed < duration)
         {
-            float x = UnityEngine.Random.Range(-1f, 1f) * magnitude;
-            float y = UnityEngine.Random.Range(-1f, 1f) * magnitude;
-            transform.localPosition = new Vector3(originalPosition.x + x, originalPosition.y + y, originalPosition.z);
-        
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+
+            shakeOffset = new Vector3(x, y, 0f);
+
             timeElapsed += Time.unscaledDeltaTime;
             yield return null;
         }
 
-        transform.localPosition = originalPosition;
-        StopCoroutine(shakeCoroutine);
+        shakeOffset = Vector3.zero;
+        shakeCoroutine = null;
     }
 }

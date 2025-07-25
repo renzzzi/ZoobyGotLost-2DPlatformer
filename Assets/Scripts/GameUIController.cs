@@ -9,13 +9,12 @@ public class GameUIController : MonoBehaviour
     private UIDocument uiDocument;
 
     private VisualElement pauseMenuContainer;
-    private Button resumeButton;
+    private Button pauseResumeButton;
     private Button pauseExitButton;
 
     private VisualElement winMenuContainer;
-    private Button nextLevelButton;
+    private Button winNextLevelButton;
     private Button winExitButton;
-    private Button winRetryButton;
 
     private VisualElement gameoverMenuContainer;
     private Button gameoverRetryButton;
@@ -52,16 +51,18 @@ public class GameUIController : MonoBehaviour
 
         // Pause Menu
         pauseMenuContainer = root.Q<VisualElement>("pause-menu-container");
-        resumeButton = root.Q<Button>("resume-button");
+        pauseResumeButton = root.Q<Button>("pause-resume-button");
         pauseExitButton = root.Q<Button>("pause-exit-button");
 
-        resumeButton.clicked += ResumeGame;
+        pauseResumeButton.clicked += ResumeGame;
         pauseExitButton.clicked += ExitGame;
 
         // Win Menu
         winMenuContainer = root.Q<VisualElement>("win-menu-container");
+        winNextLevelButton = root.Q<Button>("win-next-level-button");
         winExitButton = root.Q<Button>("win-exit-button");
-        
+
+        winNextLevelButton.clicked += GoToNextLevel;
         winExitButton.clicked += ExitGame;
 
         // Gameover Menu
@@ -69,7 +70,7 @@ public class GameUIController : MonoBehaviour
         gameoverRetryButton = root.Q<Button>("gameover-retry-button");
         gameoverExitButton = root.Q<Button>("gameover-exit-button");
 
-        gameoverRetryButton.clicked += LoadExampleScene;
+        gameoverRetryButton.clicked += RetryCurrentLevel;
         gameoverExitButton.clicked += ExitGame;
         PlayerStats.Instance.OnPlayerDeath += ShowGameoverMenu;
 
@@ -94,20 +95,27 @@ public class GameUIController : MonoBehaviour
     private void OnDisable()
     {
         // Unsubscribe from the events to prevent memory leaks and errors.
-        resumeButton.clicked -= ResumeGame;
+        pauseResumeButton.clicked -= ResumeGame;
         pauseExitButton.clicked -= ExitGame;
+        winNextLevelButton.clicked -= GoToNextLevel;
         DoorPortal.OnPlayerWin -= ShowWinMenu;
         PlayerStats.Instance.OnKeyCollect -= UpdateKeyCountDisplay;
         PlayerStats.Instance.OnDamageInflicted -= UpdateHealthBar;
         PlayerStats.Instance.OnPlayerDeath -= ShowGameoverMenu;
         pauseAction.performed -= TogglePauseMenu;
 
-        gameoverRetryButton.clicked -= LoadExampleScene;
+        gameoverRetryButton.clicked -= RetryCurrentLevel;
     }
 
-    private void LoadExampleScene()
+    private void RetryCurrentLevel()
     {
-        GameManager.Instance.LoadLevel();
+        GameManager.Instance.RetryLevel();
+        AudioManager.Instance.RestartBackgroundMusic();
+    }
+
+    private void GoToNextLevel()
+    {
+        GameManager.Instance.LoadNextLevel();
         AudioManager.Instance.RestartBackgroundMusic();
     }
 
@@ -142,6 +150,7 @@ public class GameUIController : MonoBehaviour
         Time.timeScale = 0f;
         winMenuContainer.RemoveFromClassList("hidden");
     }
+
     private void ShowGameoverMenu()
     {
         Time.timeScale = 0f;

@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
 
     [SerializeField] private GameUIController gameUIController;
     [SerializeField] private float health;
-    private int keyAmount;
+    private int keyAmount = 0;
     private bool isDead = false;
     private int activeHazardTriggers = 0;
     private Coroutine damageCoroutine;

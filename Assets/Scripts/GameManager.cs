@@ -18,9 +18,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void LoadLevel()
+    public void RetryLevel()
     {
-        SceneManager.LoadScene("Example");
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene);
     }
 
     public void LoadNextLevel()
