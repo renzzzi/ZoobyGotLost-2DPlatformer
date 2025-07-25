@@ -3,13 +3,13 @@ using System;
 
 public enum SoundType
 {
-    WalkGrass, GroundHitGrass,
     Jump,
     Hurt,
     Win,
-    GameOver,
     KeyCollect,
     PortalOpen,
+    WalkGrass, GroundHitGrass, DeathGrass,
+    WalkStone, GroundHitStone, DeathStone
 }
 
 public class AudioManager : MonoBehaviour

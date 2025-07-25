@@ -111,7 +111,6 @@ public class PlayerStats : MonoBehaviour
             gameUIController.HideHUD();
             // Stop BG Music and Plays GameOver Music
             AudioManager.Instance.StopMusic();
-            AudioManager.Instance.PlaySFX(SoundType.GameOver);
         }
     }
 

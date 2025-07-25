@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -30,8 +31,8 @@ public class PlayerController : MonoBehaviour
 
     // Stores settings for the walking sound effect
     [Header("Walking SFX Settings")]
-    [SerializeField] private float walkCooldown;
-    private float walkTimer;
+    [SerializeField] private float stepRate;
+    private float lastStepTime = 0f;
     private bool onGroundHitFlag = false;
 
     /* Internal variables that stores crucial information, in order:
@@ -78,11 +79,36 @@ public class PlayerController : MonoBehaviour
         jumpAction.Disable();
     }
 
+    // Events for SFX
+    public static event Action OnPlayerStep;
+    public static event Action OnGroundHit;
+
     private void Update()
     {
         moveInput = moveAction.ReadValue<Vector2>().x;
         isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, groundLayer);
 
+        // Logic for SFX
+        if (isGrounded && Mathf.Abs(rigidBody.linearVelocity.x) > 0.1f)
+        {
+            if (Time.time - lastStepTime > stepRate)
+            {
+                OnPlayerStep?.Invoke();
+                lastStepTime = Time.time;
+            }
+        }
+
+        if (onGroundHitFlag && isGrounded)
+        {
+            OnGroundHit?.Invoke();
+            onGroundHitFlag = false;
+        }
+        else if (rigidBody.linearVelocity.y < -0.05f && !isGrounded)
+        {
+            onGroundHitFlag = true;
+        }
+
+        // Logic for Coyote Time and Jump Buffer
         if (isGrounded)
         {
             coyoteTimeCounter = coyoteTime;
@@ -104,8 +130,6 @@ public class PlayerController : MonoBehaviour
 
         HandleSpriteFlip();
         HandleAnimations();
-        HandleWalkingSound();
-        HandleGroundHitSound();
     }
 
     private void FixedUpdate()
@@ -159,36 +183,6 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("YVelocity", rigidBody.linearVelocity.y);
         animator.SetBool("isGrounded", isGrounded);
-    }
-
-    private void HandleWalkingSound()
-    {
-        walkTimer += Time.deltaTime;
-
-        if (isGrounded && Mathf.Abs(rigidBody.linearVelocity.x) > 0.05f)
-        {
-            if (walkTimer > walkCooldown)
-            {
-                AudioManager.Instance.PlaySFX(SoundType.WalkGrass);
-                walkTimer = 0f;
-            }
-        }
-    }
-
-    private void HandleGroundHitSound()
-    {
-        if (onGroundHitFlag && isGrounded)
-        {
-            AudioManager.Instance.PlaySFX(SoundType.GroundHitGrass);
-            onGroundHitFlag = false;
-        }
-        else
-        {
-            if (rigidBody.linearVelocity.y < -0.05f && !isGrounded)
-            {
-                onGroundHitFlag = true;
-            }
-        }
     }
 
     // Draws a wireframe box in the scene to visualize the ground check area
