@@ -8,8 +8,13 @@ public enum SoundType
     Win,
     KeyCollect,
     PortalOpen,
-    WalkGrass, GroundHitGrass, DeathGrass,
-    WalkStone, GroundHitStone, DeathStone
+    FirstStageDeath, SecondStageDeath, ThirdStageDeath,
+    WalkGrass, GroundHitGrass,
+    WalkWood, GroundHitWood,
+    WalkStone, GroundHitStone,
+    WalkGravel, GroundHitGravel,
+    WalkMetal, GroundHitMetal,
+    WalkRubber, GroundHitRubber
 }
 
 public class AudioManager : MonoBehaviour
