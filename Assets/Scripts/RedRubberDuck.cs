@@ -1,24 +1,24 @@
 using UnityEngine;
 
-public class MiddleFinger : MonoBehaviour
+public class RedRubberDuck : MonoBehaviour
 {
     private bool isMoving = false;
     private Vector3 targetPosition;
     [SerializeField] private float moveSpeed = 2f;
-    private CircleCollider2D circleCollider;
+    private CapsuleCollider2D capsuleCollider;
 
     private void Awake()
     {
-        circleCollider = GetComponent<CircleCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            targetPosition = new Vector3(transform.position.x, transform.position.y + 1.4f, transform.position.z);
+            targetPosition = new Vector3(transform.position.x, transform.position.y + 1.1f, transform.position.z);
             isMoving = true;
-            circleCollider.enabled = false;
+            capsuleCollider.enabled = false;
         }
     }
 
