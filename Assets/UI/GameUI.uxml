@@ -1,5 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/GameUI_Style.uss?fileID=7433441132597879392&amp;guid=3cf00ee86669c9e49aeaff15cb2b9ca8&amp;type=3#GameUI_Style" />
+    <Style src="project://database/Assets/UI/GameUIStyle.uss?fileID=7433441132597879392&amp;guid=3cf00ee86669c9e49aeaff15cb2b9ca8&amp;type=3#GameUIStyle" />
+    <Style src="project://database/Assets/UI/UniversalStyle.uss?fileID=7433441132597879392&amp;guid=d90460473bce43f4e91d87bcc18520ab&amp;type=3#UniversalStyle" />
     <ui:VisualElement name="root-container" style="flex-grow: 1;">
         <ui:VisualElement name="hud-container" style="flex-grow: 1;">
             <ui:VisualElement name="score-container" enabled="true" style="flex-grow: 0;">
@@ -13,20 +14,23 @@
                 <ui:Label text="100" name="health-bar-value" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="pause-menu-container" class="hidden menu" style="flex-grow: 1;">
+        <ui:VisualElement name="pause-menu-container" class="menu hidden" style="flex-grow: 1;">
             <ui:Label text="GAME PAUSED" name="pause-title" class="title" />
             <ui:Button text="Resume" name="pause-resume-button" class="button" />
-            <ui:Button text="Exit" name="pause-exit-button" class="button" />
+            <ui:Button text="Back to Main Menu" name="pause-back-button" class="button back" />
+            <ui:Button text="Exit to Desktop" name="pause-exit-button" class="button exit" />
         </ui:VisualElement>
-        <ui:VisualElement name="win-menu-container" class="hidden menu" style="flex-grow: 1;">
+        <ui:VisualElement name="win-menu-container" class="menu hidden" style="flex-grow: 1;">
             <ui:Label text="YOU WIN!" name="win-title" class="title" />
             <ui:Button text="Next Level" name="win-next-level-button" class="button" />
-            <ui:Button text="Exit" name="win-exit-button" class="button" />
+            <ui:Button text="Back to Main Menu" name="win-back-button" class="button back" />
+            <ui:Button text="Exit to Desktop" name="win-exit-button" class="button exit" />
         </ui:VisualElement>
         <ui:VisualElement name="gameover-menu-container" class="menu hidden" style="flex-grow: 1;">
             <ui:Label text="GAME OVER" name="gameover-title" class="title" />
             <ui:Button text="Retry" name="gameover-retry-button" class="button" />
-            <ui:Button text="Exit" name="gameover-exit-button" class="button" />
+            <ui:Button text="Back to Main Menu" name="gameover-back-button" class="button back" />
+            <ui:Button text="Exit to Desktop" name="gameover-exit-button" class="button exit" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

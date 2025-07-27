@@ -1,0 +1,12 @@
+#mainmenu-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-container {
+
+}
+
+#button-container {
+    justify-content: center;
+}

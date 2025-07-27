@@ -33,4 +33,9 @@ public class GameManager : MonoBehaviour
         int nextScene = (currentScene + 1) % SceneManager.sceneCountInBuildSettings;
         SceneManager.LoadScene(nextScene);
     }
+
+    public void LoadMainMenu()
+    {
+
+    }
 }

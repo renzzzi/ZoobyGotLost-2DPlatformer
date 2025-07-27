@@ -10,101 +10,110 @@ public class GameUIController : MonoBehaviour
 
     private VisualElement pauseMenuContainer;
     private Button pauseResumeButton;
-    private Button pauseExitButton;
 
     private VisualElement winMenuContainer;
     private Button winNextLevelButton;
-    private Button winExitButton;
 
     private VisualElement gameoverMenuContainer;
     private Button gameoverRetryButton;
-    private Button gameoverExitButton;
 
-    // -- HUD Variable --
+    // HUD Variable
     private VisualElement HUDContainer;
     private Label keyCount;
     private VisualElement healthBarFill;
     private Label healthBarValue;
 
-    // --- Input System Variables ---
+    // Input System Variables
     private PlayerInput playerInput; // Reference to the PlayerInput component
     private InputAction pauseAction;   // Reference to our specific "Pause" action
 
-    // --- State Variable ---
+    // State Variable
     private bool isPaused = false;
 
     // Awake is called before OnEnable. It's a great place to get components.
     void Awake()
     {
-        // Get the PlayerInput component from this same GameObject
         playerInput = GetComponent<PlayerInput>();
 
-        // Find the "UI" action map and then the "Pause" action within it
         pauseAction = playerInput.actions.FindAction("Pause");
     }
 
     // OnEnable is for setting up UI and subscribing to events
     private void OnEnable()
     {
-        // --- UI Setup (same as before) ---
+        // UI Setup
         var root = uiDocument.rootVisualElement;
 
         // Pause Menu
         pauseMenuContainer = root.Q<VisualElement>("pause-menu-container");
         pauseResumeButton = root.Q<Button>("pause-resume-button");
-        pauseExitButton = root.Q<Button>("pause-exit-button");
 
         pauseResumeButton.clicked += ResumeGame;
-        pauseExitButton.clicked += ExitGame;
 
         // Win Menu
         winMenuContainer = root.Q<VisualElement>("win-menu-container");
         winNextLevelButton = root.Q<Button>("win-next-level-button");
-        winExitButton = root.Q<Button>("win-exit-button");
 
         winNextLevelButton.clicked += GoToNextLevel;
-        winExitButton.clicked += ExitGame;
 
         // Gameover Menu
         gameoverMenuContainer = root.Q<VisualElement>("gameover-menu-container");
         gameoverRetryButton = root.Q<Button>("gameover-retry-button");
-        gameoverExitButton = root.Q<Button>("gameover-exit-button");
 
         gameoverRetryButton.clicked += RetryCurrentLevel;
-        gameoverExitButton.clicked += ExitGame;
         PlayerStats.Instance.OnPlayerDeath += ShowGameoverMenu;
 
         // HUD
         HUDContainer = root.Q<VisualElement>("hud-container");
         keyCount = root.Q<Label>("score-count");
-        PlayerStats.Instance.OnKeyCollect += UpdateKeyCountDisplay;
         healthBarFill = root.Q<VisualElement>("health-bar-fill");
         healthBarValue = root.Q<Label>("health-bar-value");
+        PlayerStats.Instance.OnKeyCollect += UpdateKeyCountDisplay;
         PlayerStats.Instance.OnDamageInflicted += UpdateHealthBar;
 
+        // SFX for buttons
+        var allSFXButtons = root.Query<Button>(null, "button").ToList();
+
+        foreach (var button in allSFXButtons)
+        {
+            button.clicked += ButtonClickSFX;
+            button.RegisterCallback<PointerEnterEvent>(e => ButtonHoverSFX());
+        }
+
+        // Exit Buttons
+        var allExitButtons = root.Query<Button>(null, "exit").ToList();
+
+        foreach (var button in allExitButtons)
+        {
+            button.clicked += ExitGame;
+        }
+
+        // Back Buttons
+        var allBackButtons = root.Query<Button>(null, "back").ToList();
+        /*
+        foreach (var button in allBackButtons)
+        {
+            button.clicked += 
+        }
+        */
+        // Extras
         DoorPortal.OnPlayerWin += ShowWinMenu;
-
         pauseAction.performed += TogglePauseMenu;
-
-        // --- Initial State (same as before) ---
         pauseMenuContainer.AddToClassList("hidden");
         Time.timeScale = 1f;
     }
 
-    // OnDisable is called when the object is disabled. It's crucial for cleanup.
     private void OnDisable()
     {
-        // Unsubscribe from the events to prevent memory leaks and errors.
         pauseResumeButton.clicked -= ResumeGame;
-        pauseExitButton.clicked -= ExitGame;
         winNextLevelButton.clicked -= GoToNextLevel;
+        gameoverRetryButton.clicked -= RetryCurrentLevel;
+
         DoorPortal.OnPlayerWin -= ShowWinMenu;
         PlayerStats.Instance.OnKeyCollect -= UpdateKeyCountDisplay;
         PlayerStats.Instance.OnDamageInflicted -= UpdateHealthBar;
         PlayerStats.Instance.OnPlayerDeath -= ShowGameoverMenu;
         pauseAction.performed -= TogglePauseMenu;
-
-        gameoverRetryButton.clicked -= RetryCurrentLevel;
     }
 
     private void RetryCurrentLevel()
@@ -125,11 +134,13 @@ public class GameUIController : MonoBehaviour
 
         if (isPaused)
         {
+            AudioManager.Instance.PlaySFX(SoundType.PauseGame);
             Time.timeScale = 0f;
             pauseMenuContainer.RemoveFromClassList("hidden");
         }
         else
         {
+            AudioManager.Instance.PlaySFX(SoundType.ResumeGame);
             Time.timeScale = 1f;
             pauseMenuContainer.AddToClassList("hidden");
         }
@@ -188,5 +199,15 @@ public class GameUIController : MonoBehaviour
     public void HideHUD()
     {
         HUDContainer.AddToClassList("hidden");
+    }
+
+    private void ButtonClickSFX()
+    {
+        AudioManager.Instance.PlaySFX(SoundType.ButtonClick);
+    }
+
+    private void ButtonHoverSFX()
+    {
+        AudioManager.Instance.PlaySFX(SoundType.ButtonHover);
     }
 }

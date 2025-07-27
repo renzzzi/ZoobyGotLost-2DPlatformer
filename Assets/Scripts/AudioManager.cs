@@ -14,7 +14,10 @@ public enum SoundType
     WalkStone, GroundHitStone,
     WalkGravel, GroundHitGravel,
     WalkMetal, GroundHitMetal,
-    WalkRubber, GroundHitRubber
+    WalkRubber, GroundHitRubber,
+    ButtonClick, ButtonHover,
+    PauseGame, ResumeGame,
+    ExitMainMenu
 }
 
 public class AudioManager : MonoBehaviour
@@ -24,7 +27,11 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Sources")]
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
-    [SerializeField] private AudioClip backgroundMusic;
+
+    [SerializeField] private AudioClip mainMenuBGM;
+    [SerializeField] private AudioClip firstStageBGM;
+    [SerializeField] private AudioClip secondStageBGM;
+    [SerializeField] private AudioClip thirdStageBGM;
 
     [System.Serializable]
     public class Sound
@@ -51,7 +58,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic(backgroundMusic);
+        PlayMusic(mainMenuBGM);
     }
 
     public void PlayMusic(AudioClip musicClip)
@@ -81,6 +88,6 @@ public class AudioManager : MonoBehaviour
 
     public void RestartBackgroundMusic()
     {
-        PlayMusic(backgroundMusic);
+        PlayMusic(mainMenuBGM);
     }
 }
