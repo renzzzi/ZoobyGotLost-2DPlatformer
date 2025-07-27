@@ -1,49 +1,10 @@
 fileFormatVersion: 2
-guid: 19a9f36c52899374d805b9066c69810d
+guid: f57b436d653b10a42bfc96261b703fe2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7895529742971213667
-    second: Smartypants_Run_0
-  - first:
-      213: -3342685427244972219
-    second: Smartypants_Run_1
-  - first:
-      213: 8599251351374288683
-    second: Smartypants_Run_2
-  - first:
-      213: 2180932027468015310
-    second: Smartypants_Run_3
-  - first:
-      213: 5038585739036833443
-    second: Smartypants_Run_4
-  - first:
-      213: -8286939153562576939
-    second: Smartypants_Run_5
-  - first:
-      213: -8917588252843726931
-    second: Smartypants_Run_6
-  - first:
-      213: -7606579561950397135
-    second: Smartypants_Run_7
-  - first:
-      213: 6204699612565235382
-    second: Smartypants_Run_8
-  - first:
-      213: -4579163502836726017
-    second: Smartypants_Run_9
-  - first:
-      213: -3824976314173880637
-    second: Smartypants_Run_10
-  - first:
-      213: 1249304455123951009
-    second: Smartypants_Run_11
-  - first:
-      213: -8180625220479368168
-    second: Smartypants_Run_12
-  - first:
-      213: 2437334411221310865
-    second: Smartypants_Run_13
+      213: 7916442160790778779
+    second: GravelTileset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,7 +126,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Smartypants_Run_0
+      name: GravelTileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b933cdeb33adcdd60800000000000000
+      internalID: 7916442160790778779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e46f1829266bb47944693f2596a5d6
+      internalID: 1093059259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9731ec951db587f458414f679c1ff712
+      internalID: -1801555036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b68172cf86ec54a8f7f9ea80df5470
+      internalID: -393794949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1542470bbd0b328498968b817348cbad
+      internalID: -982581524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d498280de0e82e43be36ddb327c03a2
+      internalID: 1344756395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2784d263cdd2baa4cb5aee2151277957
+      internalID: 814140207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56fc144ab087c0479876685fc003f4b
+      internalID: -1507814832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85eb853e8254fa748a8a606fda045125
+      internalID: 199935221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f207eb5b7569333428de97a8ac9c1948
+      internalID: 1497335972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6c8f5796b574f4797b48108464096e
+      internalID: -1024426896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9520a1e454dc40c46ac5ac99d15e72a0
+      internalID: -642146893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da54bc640d267e419511e099c1b1eb4
+      internalID: -1046903923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a43652846dc474ebe49cc524698b98
+      internalID: -1856710922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adf0b6b76cb57b4c8bf2460f2c7f976
+      internalID: 957653918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GravelTileset_15
       rect:
         serializedVersion: 2
         x: 0
@@ -178,16 +469,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 367945b087e829d60800000000000000
-      internalID: 7895529742971213667
+      spriteID: cfd696c9b31a8744985d6989647c6dd8
+      internalID: -10023204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smartypants_Run_1
+      name: GravelTileset_16
       rect:
         serializedVersion: 2
         x: 32
@@ -200,16 +491,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 547403170556c91d0800000000000000
-      internalID: -3342685427244972219
+      spriteID: 3bb1c452ff3e15c4ca35f6dea83fa458
+      internalID: 559646494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smartypants_Run_2
+      name: GravelTileset_17
       rect:
         serializedVersion: 2
         x: 64
@@ -222,16 +513,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b2756f41b8da65770800000000000000
-      internalID: 8599251351374288683
+      spriteID: 38ce7da3170517a4da5097cd98a6c85b
+      internalID: -2069544098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smartypants_Run_3
+      name: GravelTileset_18
       rect:
         serializedVersion: 2
         x: 96
@@ -244,230 +535,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ec6e088bf1a344e10800000000000000
-      internalID: 2180932027468015310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3a6b3a9b807ace540800000000000000
-      internalID: 5038585739036833443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d750a4feb0eefc80800000000000000
-      internalID: -8286939153562576939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da7ad004bbc5e3480800000000000000
-      internalID: -8917588252843726931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13d33369030007690800000000000000
-      internalID: -7606579561950397135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b664f87c658b1650800000000000000
-      internalID: 6204699612565235382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff6cbfc3e0b8370c0800000000000000
-      internalID: -4579163502836726017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_10
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c6026fce44faeac0800000000000000
-      internalID: -3824976314173880637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_11
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1add9f768cb665110800000000000000
-      internalID: 1249304455123951009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_12
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 814c9bc64b4987e80800000000000000
-      internalID: -8180625220479368168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smartypants_Run_13
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19d9ea3cbb623d120800000000000000
-      internalID: 2437334411221310865
+      spriteID: 96194343d0a1cbf439e5944cf23c56be
+      internalID: 1393025472
       vertices: []
       indices: 
       edges: []
@@ -476,7 +547,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 80dd970ff05642e45aba64dbb35069f1
+    spriteID: 4326297fc77760f48ab3996a4078ea18
     internalID: 0
     vertices: []
     indices: 
@@ -486,22 +557,27 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":14.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Smartypants_Run_0: 7895529742971213667
-      Smartypants_Run_1: -3342685427244972219
-      Smartypants_Run_10: -3824976314173880637
-      Smartypants_Run_11: 1249304455123951009
-      Smartypants_Run_12: -8180625220479368168
-      Smartypants_Run_13: 2437334411221310865
-      Smartypants_Run_2: 8599251351374288683
-      Smartypants_Run_3: 2180932027468015310
-      Smartypants_Run_4: 5038585739036833443
-      Smartypants_Run_5: -8286939153562576939
-      Smartypants_Run_6: -8917588252843726931
-      Smartypants_Run_7: -7606579561950397135
-      Smartypants_Run_8: 6204699612565235382
-      Smartypants_Run_9: -4579163502836726017
+      GravelTileset_0: 7916442160790778779
+      GravelTileset_1: 1093059259
+      GravelTileset_10: -1024426896
+      GravelTileset_11: -642146893
+      GravelTileset_12: -1046903923
+      GravelTileset_13: -1856710922
+      GravelTileset_14: 957653918
+      GravelTileset_15: -10023204
+      GravelTileset_16: 559646494
+      GravelTileset_17: -2069544098
+      GravelTileset_18: 1393025472
+      GravelTileset_2: -1801555036
+      GravelTileset_3: -393794949
+      GravelTileset_4: -982581524
+      GravelTileset_5: 1344756395
+      GravelTileset_6: 814140207
+      GravelTileset_7: -1507814832
+      GravelTileset_8: 199935221
+      GravelTileset_9: 1497335972
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
             OnGroundHit?.Invoke();
             onGroundHitFlag = false;
         }
-        else if (rigidBody.linearVelocity.y < -0.05f && !isGrounded)
+        else if (rigidBody.linearVelocity.y < -0.1f && !isGrounded)
         {
             onGroundHitFlag = true;
         }
