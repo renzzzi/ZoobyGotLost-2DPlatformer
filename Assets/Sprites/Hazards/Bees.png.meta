@@ -1,0 +1,1365 @@
+fileFormatVersion: 2
+guid: e0664c448e3cf134b964ec4e03b667bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2332983640317547041
+    second: Bees_0
+  - first:
+      213: -126367013384081014
+    second: Bees_1
+  - first:
+      213: -5474950934700313699
+    second: Bees_2
+  - first:
+      213: -4355955560570230870
+    second: Bees_3
+  - first:
+      213: 8151939860842676794
+    second: Bees_4
+  - first:
+      213: 3751641191456039098
+    second: Bees_5
+  - first:
+      213: 2763684438416161042
+    second: Bees_6
+  - first:
+      213: -6767935712859175085
+    second: Bees_7
+  - first:
+      213: 4983148615625257047
+    second: Bees_8
+  - first:
+      213: -6592980452668669618
+    second: Bees_9
+  - first:
+      213: -1438245712045281133
+    second: Bees_10
+  - first:
+      213: -8058716909056721680
+    second: Bees_11
+  - first:
+      213: -5797798276144994668
+    second: Bees_12
+  - first:
+      213: -9088790115818606016
+    second: Bees_13
+  - first:
+      213: -1029360966721596708
+    second: Bees_14
+  - first:
+      213: 693531678064313228
+    second: Bees_15
+  - first:
+      213: 6557878502054954004
+    second: Bees_16
+  - first:
+      213: 5870217761489046788
+    second: Bees_17
+  - first:
+      213: -3629383199763500118
+    second: Bees_18
+  - first:
+      213: 4387653436775935883
+    second: Bees_19
+  - first:
+      213: 2330585654372542428
+    second: Bees_20
+  - first:
+      213: -7072081795244106768
+    second: Bees_21
+  - first:
+      213: -3602658469959735521
+    second: Bees_22
+  - first:
+      213: 1893546333755157000
+    second: Bees_23
+  - first:
+      213: -88930831683681452
+    second: Bees_24
+  - first:
+      213: -1360616144106606217
+    second: Bees_25
+  - first:
+      213: -6939130934691840532
+    second: Bees_26
+  - first:
+      213: -5272134644737721606
+    second: Bees_27
+  - first:
+      213: 8647984545799014057
+    second: Bees_28
+  - first:
+      213: -2150480938863261986
+    second: Bees_29
+  - first:
+      213: -2231952974336204947
+    second: Bees_30
+  - first:
+      213: -1065008563480276833
+    second: Bees_31
+  - first:
+      213: 6595216246088063788
+    second: Bees_32
+  - first:
+      213: -5152083772428201901
+    second: Bees_33
+  - first:
+      213: -4215201691408996156
+    second: Bees_34
+  - first:
+      213: 6042638967838913384
+    second: Bees_35
+  - first:
+      213: -5278820438856270798
+    second: Bees_36
+  - first:
+      213: 8561060683723354570
+    second: Bees_37
+  - first:
+      213: 136331432936623135
+    second: Bees_38
+  - first:
+      213: -8841171321561492510
+    second: Bees_39
+  - first:
+      213: -5043735053188125797
+    second: Bees_40
+  - first:
+      213: 2545189840667530506
+    second: Bees_41
+  - first:
+      213: -4842707019027718520
+    second: Bees_42
+  - first:
+      213: 2347143260225141441
+    second: Bees_43
+  - first:
+      213: 6957542492483429973
+    second: Bees_44
+  - first:
+      213: 6943406254241285171
+    second: Bees_45
+  - first:
+      213: 9213447734656031625
+    second: Bees_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bees_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd23146db39f9fd0800000000000000
+      internalID: -2332983640317547041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 11
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a813aefeedd0f3ef0800000000000000
+      internalID: -126367013384081014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 19
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93be76e1211504b0800000000000000
+      internalID: -5474950934700313699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 21
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7e2da1f798c83c0800000000000000
+      internalID: -4355955560570230870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 22
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3200e3dc12812170800000000000000
+      internalID: 8151939860842676794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 21
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0e57d59c1801430800000000000000
+      internalID: 3751641191456039098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_6
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 20
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219f117aa549a5620800000000000000
+      internalID: 2763684438416161042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_7
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 18
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3574954c3567312a0800000000000000
+      internalID: -6767935712859175085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 15
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750b2599343b72540800000000000000
+      internalID: 4983148615625257047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 13
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41079b95370184a0800000000000000
+      internalID: -6592980452668669618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_10
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 4
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390ffc125235a0ce0800000000000000
+      internalID: -1438245712045281133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_11
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 6
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc7d3a0bafa92090800000000000000
+      internalID: -8058716909056721680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_12
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 4
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49661079f251a8fa0800000000000000
+      internalID: -5797798276144994668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_13
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 13
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042fc8c4b812ed180800000000000000
+      internalID: -9088790115818606016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 19
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd218e097a9f6b1f0800000000000000
+      internalID: -1029360966721596708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_15
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 16
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83018ff26bef9900800000000000000
+      internalID: 693531678064313228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_16
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 19
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4140823a0c3420b50800000000000000
+      internalID: 6557878502054954004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 22
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d4ebbc3f3377150800000000000000
+      internalID: 5870217761489046788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_18
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 11
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa373588537d1adc0800000000000000
+      internalID: -3629383199763500118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_19
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 14
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f2d80dd8314ec30800000000000000
+      internalID: 4387653436775935883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_20
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 16
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd72f7ffd47e75020800000000000000
+      internalID: 2330585654372542428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 14
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbd7f3a31beadd90800000000000000
+      internalID: -7072081795244106768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_22
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 12
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f176ff29539c00ec0800000000000000
+      internalID: -3602658469959735521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_23
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 9
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a283dab5a374a10800000000000000
+      internalID: 1893546333755157000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_24
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 20
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4530ae731ed04cef0800000000000000
+      internalID: -88930831683681452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_25
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 11
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7713dd663de1e1de0800000000000000
+      internalID: -1360616144106606217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_26
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 19
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cedb4c31e2143bf90800000000000000
+      internalID: -6939130934691840532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_27
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 11
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afab06c397d95d6b0800000000000000
+      internalID: -5272134644737721606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a60b6b1020d30870800000000000000
+      internalID: 8647984545799014057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed68ec6daf4f722e0800000000000000
+      internalID: -2150480938863261986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_30
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 10
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f505168928601e0800000000000000
+      internalID: -2231952974336204947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_31
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90520baa545831f0800000000000000
+      internalID: -1065008563480276833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_32
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bd6fc9b3ae68b50800000000000000
+      internalID: 6595216246088063788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_33
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 2
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350dc5b1b1f1088b0800000000000000
+      internalID: -5152083772428201901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_34
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8e0fe05689085c0800000000000000
+      internalID: -4215201691408996156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_35
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863b8ff3024cbd350800000000000000
+      internalID: 6042638967838913384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_36
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c76ec77ccddb6b0800000000000000
+      internalID: -5278820438856270798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_37
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1b4e9555ffec670800000000000000
+      internalID: 8561060683723354570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_38
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c48e747b854e100800000000000000
+      internalID: 136331432936623135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 5
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3d4fb8689dd4580800000000000000
+      internalID: -8841171321561492510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_40
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 7
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b298521bd010ab0800000000000000
+      internalID: -5043735053188125797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_41
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 3
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05dbe2dca4525320800000000000000
+      internalID: 2545189840667530506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_42
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 6
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88edf8bbf9f3bccb0800000000000000
+      internalID: -4842707019027718520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_43
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 9
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cafba60c5ab29020800000000000000
+      internalID: 2347143260225141441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_44
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 9
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5562926c8082e8060800000000000000
+      internalID: 6957542492483429973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_45
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 6
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3340743533feb5060800000000000000
+      internalID: 6943406254241285171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_46
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 4
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bdcc456edbcdf70800000000000000
+      internalID: 9213447734656031625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bees_0: -2332983640317547041
+      Bees_1: -126367013384081014
+      Bees_10: -1438245712045281133
+      Bees_11: -8058716909056721680
+      Bees_12: -5797798276144994668
+      Bees_13: -9088790115818606016
+      Bees_14: -1029360966721596708
+      Bees_15: 693531678064313228
+      Bees_16: 6557878502054954004
+      Bees_17: 5870217761489046788
+      Bees_18: -3629383199763500118
+      Bees_19: 4387653436775935883
+      Bees_2: -5474950934700313699
+      Bees_20: 2330585654372542428
+      Bees_21: -7072081795244106768
+      Bees_22: -3602658469959735521
+      Bees_23: 1893546333755157000
+      Bees_24: -88930831683681452
+      Bees_25: -1360616144106606217
+      Bees_26: -6939130934691840532
+      Bees_27: -5272134644737721606
+      Bees_28: 8647984545799014057
+      Bees_29: -2150480938863261986
+      Bees_3: -4355955560570230870
+      Bees_30: -2231952974336204947
+      Bees_31: -1065008563480276833
+      Bees_32: 6595216246088063788
+      Bees_33: -5152083772428201901
+      Bees_34: -4215201691408996156
+      Bees_35: 6042638967838913384
+      Bees_36: -5278820438856270798
+      Bees_37: 8561060683723354570
+      Bees_38: 136331432936623135
+      Bees_39: -8841171321561492510
+      Bees_4: 8151939860842676794
+      Bees_40: -5043735053188125797
+      Bees_41: 2545189840667530506
+      Bees_42: -4842707019027718520
+      Bees_43: 2347143260225141441
+      Bees_44: 6957542492483429973
+      Bees_45: 6943406254241285171
+      Bees_46: 9213447734656031625
+      Bees_5: 3751641191456039098
+      Bees_6: 2763684438416161042
+      Bees_7: -6767935712859175085
+      Bees_8: 4983148615625257047
+      Bees_9: -6592980452668669618
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

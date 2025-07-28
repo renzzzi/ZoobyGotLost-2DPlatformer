@@ -1,16 +1,79 @@
 fileFormatVersion: 2
-guid: f9f84409bb385c949a2890f8f90d9c7b
+guid: 8cfe8f98652068346b54513d72236e16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5555539270824955543
-    second: Thorns_0
+      213: -4060444778572173966
+    second: ThornsHazard_0
   - first:
-      213: -5449743900485393995
-    second: Thorns_1
+      213: 452971779164653692
+    second: ThornsHazard_1
   - first:
-      213: 3799979988391553966
-    second: Thorns_2
+      213: -7651979377945976823
+    second: ThornsHazard_2
+  - first:
+      213: 7548953058851263699
+    second: ThornsHazard_3
+  - first:
+      213: -3367250731142980468
+    second: ThornsHazard_4
+  - first:
+      213: -130852491286351853
+    second: ThornsHazard_5
+  - first:
+      213: 4982732633381682659
+    second: ThornsHazard_6
+  - first:
+      213: 8499179777504185712
+    second: ThornsHazard_7
+  - first:
+      213: 7757746375392313249
+    second: ThornsHazard_8
+  - first:
+      213: -7519495087199225086
+    second: ThornsHazard_9
+  - first:
+      213: 662172393329214488
+    second: ThornsHazard_10
+  - first:
+      213: -2949343741528700569
+    second: ThornsHazard_11
+  - first:
+      213: -9164708445186452259
+    second: ThornsHazard_12
+  - first:
+      213: -7453327099178781138
+    second: ThornsHazard_13
+  - first:
+      213: 8963042163746945219
+    second: ThornsHazard_14
+  - first:
+      213: 5295177798222587640
+    second: ThornsHazard_15
+  - first:
+      213: -8101359298997719495
+    second: ThornsHazard_16
+  - first:
+      213: -6110132165238827179
+    second: ThornsHazard_17
+  - first:
+      213: 935880111431355756
+    second: ThornsHazard_18
+  - first:
+      213: -4420262058572955039
+    second: ThornsHazard_19
+  - first:
+      213: -1155628690904285457
+    second: ThornsHazard_20
+  - first:
+      213: -2000616788470426907
+    second: ThornsHazard_21
+  - first:
+      213: -8137268795141748604
+    second: ThornsHazard_22
+  - first:
+      213: -5345671684119589634
+    second: ThornsHazard_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,7 +195,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Thorns_0
+      name: ThornsHazard_0
       rect:
         serializedVersion: 2
         x: 0
@@ -145,23 +208,20 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 7, y: -3}
-        - {x: 4, y: 8}
-        - {x: -4, y: 8}
-        - {x: -7, y: -3}
-        - {x: -7, y: -10}
-        - {x: 1, y: -13}
-        - {x: 7, y: -9}
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
-      spriteID: 79e0145488d391d40800000000000000
-      internalID: 5555539270824955543
+      spriteID: 27dad1facf666a7c0800000000000000
+      internalID: -4060444778572173966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thorns_1
+      name: ThornsHazard_1
       rect:
         serializedVersion: 2
         x: 32
@@ -174,23 +234,20 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 7, y: -3}
-        - {x: 4, y: 8}
-        - {x: -4, y: 8}
-        - {x: -7, y: -3}
-        - {x: -7, y: -10}
-        - {x: 1, y: -13}
-        - {x: 7, y: -9}
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
-      spriteID: 5b167b6ebce9e54b0800000000000000
-      internalID: -5449743900485393995
+      spriteID: c78c266ee67494600800000000000000
+      internalID: 452971779164653692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thorns_2
+      name: ThornsHazard_2
       rect:
         serializedVersion: 2
         x: 64
@@ -203,17 +260,560 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 7, y: -3}
-        - {x: 4, y: 8}
-        - {x: -4, y: 8}
-        - {x: -7, y: -3}
-        - {x: -7, y: -10}
-        - {x: 1, y: -13}
-        - {x: 7, y: -9}
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
-      spriteID: eabeba19aad3cb430800000000000000
-      internalID: 3799979988391553966
+      spriteID: 9006ae43c45bec590800000000000000
+      internalID: -7651979377945976823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d49dea9fc443c860800000000000000
+      internalID: 7548953058851263699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c5c8cec4f1541d0800000000000000
+      internalID: -3367250731142980468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310f6ea3a5e1f2ef0800000000000000
+      internalID: -130852491286351853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed367f2ee8362540800000000000000
+      internalID: 4982732633381682659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d02502af623f570800000000000000
+      internalID: 8499179777504185712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af35d2e93d09ab60800000000000000
+      internalID: 7757746375392313249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bf135ee0365a790800000000000000
+      internalID: -7519495087199225086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814457c8842803900800000000000000
+      internalID: 662172393329214488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76909ad4e73d117d0800000000000000
+      internalID: -2949343741528700569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd493aec93a60d080800000000000000
+      internalID: -9164708445186452259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26f7a22e76709890800000000000000
+      internalID: -7453327099178781138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c83cf41c5f136c70800000000000000
+      internalID: 8963042163746945219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6a79507204c7940800000000000000
+      internalID: 5295177798222587640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93eee61f3a0329f80800000000000000
+      internalID: -8101359298997719495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_17
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55750482b23743ba0800000000000000
+      internalID: -6110132165238827179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d083ab00aecfc00800000000000000
+      internalID: 935880111431355756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1624f98c31318a2c0800000000000000
+      internalID: -4420262058572955039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee766214d166ffe0800000000000000
+      internalID: -1155628690904285457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2998f61a16c34e0800000000000000
+      internalID: -2000616788470426907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48884b7d42d921f80800000000000000
+      internalID: -8137268795141748604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThornsHazard_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 5}
+        - {x: 0, y: -16}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc00360deb50d5b0800000000000000
+      internalID: -5345671684119589634
       vertices: []
       indices: 
       edges: []
@@ -222,7 +822,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 56ba025cda7c9c846b16f269827d0bb9
+    spriteID: 5ee14d7e35590c54a81a00d179c58673
     internalID: 0
     vertices: []
     indices: 
@@ -232,11 +832,32 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Thorns_0: 5555539270824955543
-      Thorns_1: -5449743900485393995
-      Thorns_2: 3799979988391553966
+      ThornsHazard_0: -4060444778572173966
+      ThornsHazard_1: 452971779164653692
+      ThornsHazard_10: 662172393329214488
+      ThornsHazard_11: -2949343741528700569
+      ThornsHazard_12: -9164708445186452259
+      ThornsHazard_13: -7453327099178781138
+      ThornsHazard_14: 8963042163746945219
+      ThornsHazard_15: 5295177798222587640
+      ThornsHazard_16: -8101359298997719495
+      ThornsHazard_17: -6110132165238827179
+      ThornsHazard_18: 935880111431355756
+      ThornsHazard_19: -4420262058572955039
+      ThornsHazard_2: -7651979377945976823
+      ThornsHazard_20: -1155628690904285457
+      ThornsHazard_21: -2000616788470426907
+      ThornsHazard_22: -8137268795141748604
+      ThornsHazard_23: -5345671684119589634
+      ThornsHazard_3: 7548953058851263699
+      ThornsHazard_4: -3367250731142980468
+      ThornsHazard_5: -130852491286351853
+      ThornsHazard_6: 4982732633381682659
+      ThornsHazard_7: 8499179777504185712
+      ThornsHazard_8: 7757746375392313249
+      ThornsHazard_9: -7519495087199225086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
