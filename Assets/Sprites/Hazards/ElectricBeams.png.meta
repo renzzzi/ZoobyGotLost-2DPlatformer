@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,17 +132,21 @@ TextureImporter:
       name: ElectricBeams_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 80
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 14, y: 6}
+        - {x: -2, y: 14}
+        - {x: 4, y: -2}
+        - {x: 14, y: -2}
+      tessellationDetail: 0
       bones: []
       spriteID: 6b07638bc53ef4fb0800000000000000
       internalID: -4661257101938102090
@@ -154,20 +158,128 @@ TextureImporter:
       name: ElectricBeams_1
       rect:
         serializedVersion: 2
-        x: 104
+        x: 32
         y: 0
-        width: 80
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 16, y: -3}
+        - {x: 16, y: 3}
+        - {x: -16, y: 3}
+        - {x: -16, y: -3}
+      tessellationDetail: 0
       bones: []
       spriteID: f02e03e830fd914c0800000000000000
       internalID: -4316173561494445553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricBeams_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 14}
+        - {x: -16, y: 6}
+        - {x: -16, y: -2}
+        - {x: -5, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f601b5b2fbb5ba0468728ff90f5fbf2b
+      internalID: 757794450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricBeams_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 6}
+        - {x: -2, y: 14}
+        - {x: 4, y: -2}
+        - {x: 14, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a1c9ee8b551b74fbaa612fabed54ab
+      internalID: 911046010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricBeams_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -3}
+        - {x: 16, y: 3}
+        - {x: -16, y: 3}
+        - {x: -16, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cab0905a71de24b9003d2e99c398b1
+      internalID: 1060994926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricBeams_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 14}
+        - {x: -16, y: 6}
+        - {x: -16, y: -2}
+        - {x: -5, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879e82e6116186b42bda849a9a47d473
+      internalID: -1854401102
       vertices: []
       indices: 
       edges: []
@@ -176,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4ff0c0718c68be04b8837d819f138756
     internalID: 0
     vertices: []
     indices: 
@@ -184,10 +296,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ElectricBeams_0: -4661257101938102090
       ElectricBeams_1: -4316173561494445553
+      ElectricBeams_2: 757794450
+      ElectricBeams_3: 911046010
+      ElectricBeams_4: 1060994926
+      ElectricBeams_5: -1854401102
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -175,7 +175,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -189,9 +189,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -213,7 +213,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -268,16 +268,24 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 18
-        width: 16
-        height: 11
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: fdd23146db39f9fd0800000000000000
       internalID: -2332983640317547041
@@ -289,17 +297,25 @@ TextureImporter:
       name: Bees_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 11
-        width: 16
-        height: 11
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: a813aefeedd0f3ef0800000000000000
       internalID: -126367013384081014
@@ -311,17 +327,25 @@ TextureImporter:
       name: Bees_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 19
-        width: 16
-        height: 11
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: d93be76e1211504b0800000000000000
       internalID: -5474950934700313699
@@ -333,17 +357,25 @@ TextureImporter:
       name: Bees_3
       rect:
         serializedVersion: 2
-        x: 68
-        y: 21
-        width: 16
-        height: 11
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: aa7e2da1f798c83c0800000000000000
       internalID: -4355955560570230870
@@ -355,17 +387,25 @@ TextureImporter:
       name: Bees_4
       rect:
         serializedVersion: 2
-        x: 104
-        y: 22
-        width: 16
-        height: 10
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: a3200e3dc12812170800000000000000
       internalID: 8151939860842676794
@@ -377,17 +417,25 @@ TextureImporter:
       name: Bees_5
       rect:
         serializedVersion: 2
-        x: 141
-        y: 21
-        width: 16
-        height: 11
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: ab0e57d59c1801430800000000000000
       internalID: 3751641191456039098
@@ -399,17 +447,25 @@ TextureImporter:
       name: Bees_6
       rect:
         serializedVersion: 2
-        x: 175
-        y: 20
-        width: 16
-        height: 11
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 219f117aa549a5620800000000000000
       internalID: 2763684438416161042
@@ -421,17 +477,25 @@ TextureImporter:
       name: Bees_7
       rect:
         serializedVersion: 2
-        x: 209
-        y: 18
-        width: 16
-        height: 11
+        x: 224
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 3574954c3567312a0800000000000000
       internalID: -6767935712859175085
@@ -443,17 +507,25 @@ TextureImporter:
       name: Bees_8
       rect:
         serializedVersion: 2
-        x: 240
-        y: 15
-        width: 16
-        height: 11
+        x: 256
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 750b2599343b72540800000000000000
       internalID: 4983148615625257047
@@ -465,17 +537,25 @@ TextureImporter:
       name: Bees_9
       rect:
         serializedVersion: 2
-        x: 270
-        y: 13
-        width: 16
-        height: 11
+        x: 288
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: e41079b95370184a0800000000000000
       internalID: -6592980452668669618
@@ -487,17 +567,25 @@ TextureImporter:
       name: Bees_10
       rect:
         serializedVersion: 2
-        x: 300
-        y: 4
-        width: 20
-        height: 19
+        x: 320
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 390ffc125235a0ce0800000000000000
       internalID: -1438245712045281133
@@ -509,17 +597,25 @@ TextureImporter:
       name: Bees_11
       rect:
         serializedVersion: 2
-        x: 388
-        y: 6
-        width: 21
-        height: 16
+        x: 352
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 0fc7d3a0bafa92090800000000000000
       internalID: -8058716909056721680
@@ -531,17 +627,25 @@ TextureImporter:
       name: Bees_12
       rect:
         serializedVersion: 2
-        x: 418
-        y: 4
-        width: 21
-        height: 20
+        x: 384
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 49661079f251a8fa0800000000000000
       internalID: -5797798276144994668
@@ -553,17 +657,25 @@ TextureImporter:
       name: Bees_13
       rect:
         serializedVersion: 2
-        x: 451
-        y: 13
-        width: 22
-        height: 14
+        x: 416
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 042fc8c4b812ed180800000000000000
       internalID: -9088790115818606016
@@ -575,17 +687,25 @@ TextureImporter:
       name: Bees_14
       rect:
         serializedVersion: 2
-        x: 480
-        y: 19
-        width: 16
-        height: 11
+        x: 448
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: cd218e097a9f6b1f0800000000000000
       internalID: -1029360966721596708
@@ -597,17 +717,25 @@ TextureImporter:
       name: Bees_15
       rect:
         serializedVersion: 2
-        x: 492
-        y: 16
-        width: 16
-        height: 11
+        x: 480
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: c83018ff26bef9900800000000000000
       internalID: 693531678064313228
@@ -619,17 +747,25 @@ TextureImporter:
       name: Bees_16
       rect:
         serializedVersion: 2
-        x: 515
-        y: 19
-        width: 28
-        height: 13
+        x: 512
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 4140823a0c3420b50800000000000000
       internalID: 6557878502054954004
@@ -641,17 +777,25 @@ TextureImporter:
       name: Bees_17
       rect:
         serializedVersion: 2
-        x: 553
-        y: 22
-        width: 24
-        height: 10
+        x: 544
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 40d4ebbc3f3377150800000000000000
       internalID: 5870217761489046788
@@ -663,17 +807,25 @@ TextureImporter:
       name: Bees_18
       rect:
         serializedVersion: 2
-        x: 584
-        y: 11
-        width: 23
-        height: 21
+        x: 576
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: aa373588537d1adc0800000000000000
       internalID: -3629383199763500118
@@ -685,17 +837,25 @@ TextureImporter:
       name: Bees_19
       rect:
         serializedVersion: 2
-        x: 615
-        y: 14
-        width: 26
-        height: 16
+        x: 608
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: b8f2d80dd8314ec30800000000000000
       internalID: 4387653436775935883
@@ -707,17 +867,25 @@ TextureImporter:
       name: Bees_20
       rect:
         serializedVersion: 2
-        x: 644
-        y: 16
-        width: 26
-        height: 12
+        x: 640
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: cd72f7ffd47e75020800000000000000
       internalID: 2330585654372542428
@@ -730,16 +898,24 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 14
-        width: 33
-        height: 17
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 0fbd7f3a31beadd90800000000000000
       internalID: -7072081795244106768
@@ -751,17 +927,25 @@ TextureImporter:
       name: Bees_22
       rect:
         serializedVersion: 2
-        x: 705
-        y: 12
-        width: 28
-        height: 20
+        x: 704
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: f176ff29539c00ec0800000000000000
       internalID: -3602658469959735521
@@ -773,17 +957,25 @@ TextureImporter:
       name: Bees_23
       rect:
         serializedVersion: 2
-        x: 738
-        y: 9
-        width: 23
-        height: 22
+        x: 736
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 80a283dab5a374a10800000000000000
       internalID: 1893546333755157000
@@ -795,17 +987,25 @@ TextureImporter:
       name: Bees_24
       rect:
         serializedVersion: 2
-        x: 771
-        y: 20
-        width: 16
-        height: 11
+        x: 768
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 4530ae731ed04cef0800000000000000
       internalID: -88930831683681452
@@ -817,482 +1017,28 @@ TextureImporter:
       name: Bees_25
       rect:
         serializedVersion: 2
-        x: 781
-        y: 11
-        width: 16
-        height: 11
+        x: 800
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -11}
+        - {x: 10, y: -8}
+        - {x: 13, y: 0}
+        - {x: 10, y: 8}
+        - {x: 0, y: 11}
+        - {x: -10, y: 8}
+        - {x: -13, y: 0}
+        - {x: -10, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 7713dd663de1e1de0800000000000000
       internalID: -1360616144106606217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_26
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 19
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cedb4c31e2143bf90800000000000000
-      internalID: -6939130934691840532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_27
-      rect:
-        serializedVersion: 2
-        x: 817
-        y: 11
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: afab06c397d95d6b0800000000000000
-      internalID: -5272134644737721606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_28
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a60b6b1020d30870800000000000000
-      internalID: 8647984545799014057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_29
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 2
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed68ec6daf4f722e0800000000000000
-      internalID: -2150480938863261986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_30
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 10
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6f505168928601e0800000000000000
-      internalID: -2231952974336204947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_31
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 2
-        width: 26
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f90520baa545831f0800000000000000
-      internalID: -1065008563480276833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_32
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 2
-        width: 22
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2bd6fc9b3ae68b50800000000000000
-      internalID: 6595216246088063788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_33
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 2
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 350dc5b1b1f1088b0800000000000000
-      internalID: -5152083772428201901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_34
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 1
-        width: 20
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c8e0fe05689085c0800000000000000
-      internalID: -4215201691408996156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_35
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 0
-        width: 24
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 863b8ff3024cbd350800000000000000
-      internalID: 6042638967838913384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_36
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 0
-        width: 28
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23c76ec77ccddb6b0800000000000000
-      internalID: -5278820438856270798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_37
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 0
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac1b4e9555ffec670800000000000000
-      internalID: 8561060683723354570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_38
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 1
-        width: 30
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1c48e747b854e100800000000000000
-      internalID: 136331432936623135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_39
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 5
-        width: 30
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e3d4fb8689dd4580800000000000000
-      internalID: -8841171321561492510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_40
-      rect:
-        serializedVersion: 2
-        x: 355
-        y: 7
-        width: 24
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9b298521bd010ab0800000000000000
-      internalID: -5043735053188125797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_41
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 3
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a05dbe2dca4525320800000000000000
-      internalID: 2545189840667530506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_42
-      rect:
-        serializedVersion: 2
-        x: 481
-        y: 6
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 88edf8bbf9f3bccb0800000000000000
-      internalID: -4842707019027718520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_43
-      rect:
-        serializedVersion: 2
-        x: 517
-        y: 9
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1cafba60c5ab29020800000000000000
-      internalID: 2347143260225141441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_44
-      rect:
-        serializedVersion: 2
-        x: 549
-        y: 9
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5562926c8082e8060800000000000000
-      internalID: 6957542492483429973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_45
-      rect:
-        serializedVersion: 2
-        x: 767
-        y: 6
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3340743533feb5060800000000000000
-      internalID: 6943406254241285171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bees_46
-      rect:
-        serializedVersion: 2
-        x: 799
-        y: 4
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 98bdcc456edbcdf70800000000000000
-      internalID: 9213447734656031625
       vertices: []
       indices: 
       edges: []
@@ -1301,7 +1047,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7761f3519e9e5b446a956f160703003b
     internalID: 0
     vertices: []
     indices: 
@@ -1309,7 +1055,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Bees_0: -2332983640317547041
       Bees_1: -126367013384081014
@@ -1330,29 +1078,8 @@ TextureImporter:
       Bees_23: 1893546333755157000
       Bees_24: -88930831683681452
       Bees_25: -1360616144106606217
-      Bees_26: -6939130934691840532
-      Bees_27: -5272134644737721606
-      Bees_28: 8647984545799014057
-      Bees_29: -2150480938863261986
       Bees_3: -4355955560570230870
-      Bees_30: -2231952974336204947
-      Bees_31: -1065008563480276833
-      Bees_32: 6595216246088063788
-      Bees_33: -5152083772428201901
-      Bees_34: -4215201691408996156
-      Bees_35: 6042638967838913384
-      Bees_36: -5278820438856270798
-      Bees_37: 8561060683723354570
-      Bees_38: 136331432936623135
-      Bees_39: -8841171321561492510
       Bees_4: 8151939860842676794
-      Bees_40: -5043735053188125797
-      Bees_41: 2545189840667530506
-      Bees_42: -4842707019027718520
-      Bees_43: 2347143260225141441
-      Bees_44: 6957542492483429973
-      Bees_45: 6943406254241285171
-      Bees_46: 9213447734656031625
       Bees_5: 3751641191456039098
       Bees_6: 2763684438416161042
       Bees_7: -6767935712859175085

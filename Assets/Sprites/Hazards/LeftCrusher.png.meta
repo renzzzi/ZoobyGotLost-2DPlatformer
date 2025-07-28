@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -161,7 +161,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,9 +181,9 @@ TextureImporter:
       name: LeftCrusher_1
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 0
-        width: 35
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       name: LeftCrusher_2
       rect:
         serializedVersion: 2
-        x: 127
+        x: 128
         y: 0
-        width: 36
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -225,9 +225,9 @@ TextureImporter:
       name: LeftCrusher_3
       rect:
         serializedVersion: 2
-        x: 191
+        x: 192
         y: 0
-        width: 37
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,9 +247,9 @@ TextureImporter:
       name: LeftCrusher_4
       rect:
         serializedVersion: 2
-        x: 255
+        x: 256
         y: 0
-        width: 38
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,9 +269,9 @@ TextureImporter:
       name: LeftCrusher_5
       rect:
         serializedVersion: 2
-        x: 319
+        x: 320
         y: 0
-        width: 39
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -291,9 +291,9 @@ TextureImporter:
       name: LeftCrusher_6
       rect:
         serializedVersion: 2
-        x: 383
+        x: 384
         y: 0
-        width: 50
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -313,9 +313,9 @@ TextureImporter:
       name: LeftCrusher_7
       rect:
         serializedVersion: 2
-        x: 447
+        x: 448
         y: 0
-        width: 127
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -335,9 +335,9 @@ TextureImporter:
       name: LeftCrusher_8
       rect:
         serializedVersion: 2
-        x: 575
+        x: 512
         y: 0
-        width: 59
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -357,9 +357,9 @@ TextureImporter:
       name: LeftCrusher_9
       rect:
         serializedVersion: 2
-        x: 639
+        x: 576
         y: 0
-        width: 54
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -379,9 +379,9 @@ TextureImporter:
       name: LeftCrusher_10
       rect:
         serializedVersion: 2
-        x: 703
+        x: 640
         y: 0
-        width: 48
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -397,11 +397,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: LeftCrusher_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3f5f37288cc934d93799c10082b57f
+      internalID: 785696059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9c7bb79a53ca6bb48baceb93be480948
     internalID: 0
     vertices: []
     indices: 
@@ -409,11 +431,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       LeftCrusher_0: -378754198848648157
       LeftCrusher_1: -8725816396495894261
       LeftCrusher_10: -7353475453152624828
+      LeftCrusher_11: 785696059
       LeftCrusher_2: -4115652326172279495
       LeftCrusher_3: -7194883990451601095
       LeftCrusher_4: 7582083670023250478
