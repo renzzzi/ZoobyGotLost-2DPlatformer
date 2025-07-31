@@ -48,7 +48,7 @@ public class CameraShake : MonoBehaviour
 
     private IEnumerator Shake()
     {
-        float timeElapsed = 0.0f;
+        float timeElapsed = 0f;
 
         while (timeElapsed < duration)
         {

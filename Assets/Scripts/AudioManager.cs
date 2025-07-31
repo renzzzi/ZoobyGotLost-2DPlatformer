@@ -3,21 +3,28 @@ using System;
 
 public enum SoundType
 {
+    // Player and Miscellaneous
     Jump,
     Hurt,
     Win,
     KeyCollect,
     PortalOpen,
+
+    // Music
     FirstStageDeath, SecondStageDeath, ThirdStageDeath,
+    
+    // Tiles
     WalkGrass, GroundHitGrass,
     WalkWood, GroundHitWood,
     WalkStone, GroundHitStone,
     WalkGravel, GroundHitGravel,
     WalkMetal, GroundHitMetal,
     WalkRubber, GroundHitRubber,
+
+    // UI
     ButtonClick, ButtonHover,
     PauseGame, ResumeGame,
-    ExitMainMenu
+    ExitMainMenu,
 }
 
 public class AudioManager : MonoBehaviour
@@ -89,5 +96,15 @@ public class AudioManager : MonoBehaviour
     public void RestartBackgroundMusic()
     {
         PlayMusic(mainMenuBGM);
+    }
+
+    public void PauseMusic()
+    {
+        musicSource.Pause();
+    }
+
+    public void UnpauseMusic()
+    {
+        musicSource.UnPause();
     }
 }

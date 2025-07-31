@@ -1,0 +1,71 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class PlayerHazardManager : MonoBehaviour
+{
+    public static PlayerHazardManager Instance {  get; private set; }
+   
+    private Dictionary<HazardType, int> activeHazardCount = new Dictionary<HazardType, int>();
+    private Dictionary<HazardType, Coroutine> activeHazardCoroutines = new Dictionary<HazardType, Coroutine>();
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void EnterHazard(HazardType hazardType, int minDamage, int maxDamage, float damageInterval)
+    {
+        if (PlayerStats.Instance.getIsDead()) return;
+
+        if (!activeHazardCount.ContainsKey(hazardType))
+        {
+            activeHazardCount[hazardType] = 0;
+        }
+
+        activeHazardCount[hazardType]++;
+
+        if (activeHazardCount[hazardType] == 1)
+        {
+            activeHazardCoroutines[hazardType] = StartCoroutine(DamageOverTime(minDamage, maxDamage, damageInterval));
+        }
+    }
+
+    public void ExitHazard(HazardType hazardType)
+    {
+        if (PlayerStats.Instance.getIsDead()) return;
+
+        if (activeHazardCount.ContainsKey(hazardType))
+        {
+            activeHazardCount[hazardType]--;
+
+            if (activeHazardCount[hazardType] <= 0)
+            {
+                if (activeHazardCoroutines.ContainsKey(hazardType) && activeHazardCoroutines[hazardType] != null)
+                {
+                    StopCoroutine(activeHazardCoroutines[hazardType]);
+                    activeHazardCoroutines[hazardType] = null;
+                }
+            }
+        }
+    }
+
+
+    private IEnumerator DamageOverTime(int minDamage, int maxDamage, float damageInterval)
+    {
+        yield return new WaitForSeconds(damageInterval * 0.4f);
+        while (!PlayerStats.Instance.getIsDead())
+        {
+            int randomDamage = Random.Range(minDamage, maxDamage + 1);
+            PlayerStats.Instance.InflictDamage(randomDamage);
+            yield return new WaitForSeconds(damageInterval);
+        }
+    }
+}

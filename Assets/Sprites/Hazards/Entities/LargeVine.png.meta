@@ -1,0 +1,981 @@
+fileFormatVersion: 2
+guid: 2f87563d84c7a16419b184b3d55ab89a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 478776366029212125
+    second: Vine_0
+  - first:
+      213: 6394182896240053803
+    second: Vine_1
+  - first:
+      213: -2362371014166406892
+    second: Vine_2
+  - first:
+      213: -3228515039213785348
+    second: Vine_3
+  - first:
+      213: -6441478854860337054
+    second: Vine_4
+  - first:
+      213: -3569944234052549026
+    second: Vine_5
+  - first:
+      213: -1307980344146990514
+    second: Vine_6
+  - first:
+      213: 9173606432580080987
+    second: Vine_7
+  - first:
+      213: -3314068481676959502
+    second: Vine_8
+  - first:
+      213: 5051083728778908544
+    second: Vine_9
+  - first:
+      213: -1704747194010223510
+    second: Vine_10
+  - first:
+      213: -3571207908165413391
+    second: Vine_11
+  - first:
+      213: -944572919411716604
+    second: Vine_12
+  - first:
+      213: 431404364820591993
+    second: Vine_13
+  - first:
+      213: 6300995739218378381
+    second: Vine_14
+  - first:
+      213: 2206880116873037841
+    second: Vine_15
+  - first:
+      213: -7496353960512733760
+    second: Vine_16
+  - first:
+      213: -2925724354399065834
+    second: Vine_17
+  - first:
+      213: 7586460097546036220
+    second: Vine_18
+  - first:
+      213: -4809948706451995541
+    second: Vine_19
+  - first:
+      213: 1487835114603517042
+    second: Vine_20
+  - first:
+      213: 6737306122814180771
+    second: Vine_21
+  - first:
+      213: 5567684201282028894
+    second: Vine_22
+  - first:
+      213: 1325094576460134128
+    second: Vine_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LargeVine_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0bcecd95fb3b547a554b23824dfe5d
+      internalID: 506308521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f5c61a10724884b9020a2b1ed7a1cb
+      internalID: 1378449974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b83822c1ebb86344a37b02ebc470037
+      internalID: -1495187557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02718ed859188dd4b950a97ec200c7b6
+      internalID: -385204850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a888170c12769349bc63a163dbeaa6c
+      internalID: -1555124680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ada01fed974a54a88ce0901e9f20f1
+      internalID: 33684501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba4481c1f122514d8392cef6e400111
+      internalID: 1457827908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e9ad35d8c2ef345883a09115f55cf1
+      internalID: 855782200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a5408cffeb98e40931ee7f19c1c1ab
+      internalID: 32072661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664dbba25de77974b903258c65f8308e
+      internalID: -461978622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1e1457d302d544a90c1747d9e53a9c
+      internalID: -1266969860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc0b416ea8594a4aa7067c80d0609ed
+      internalID: 1065550722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8b5416d294ca44e8398eeac8987e23
+      internalID: 194318813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cf2fd04a8ffdc438a613ce7b1b3ef8
+      internalID: 191804298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128173f55a0c2a14dafd8891a0fb125e
+      internalID: 491064843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b096af3bdc6154a8e1034663c241d3
+      internalID: 651591207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b052fc13acf4143b9bbd725d68bece
+      internalID: 1634051511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_17
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e2c839ffa1f1342987cb2b140b5aba
+      internalID: -1701020555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90b832219064974983ab466e19851e9
+      internalID: 1892641316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995eb44cd0ef9c84ebeb76b36ec3eba0
+      internalID: -1321307144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbbae625e26cc949b123e0cdc290824
+      internalID: 302201462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94665e93893b56d469566147988369b4
+      internalID: -343795110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0f1cbd82914a64daf1b5b6ec0fbc47
+      internalID: -1222212825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 16}
+        - {x: -2, y: 16}
+        - {x: -10, y: 2}
+        - {x: 0, y: -6}
+        - {x: 10, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604cfe14c8fd6a744820f346391f1387
+      internalID: -748563371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036150ea8ec4e494cb0232d1b97a2ab6
+      internalID: -829276497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7729c3190675e0045b9fff141abd0a29
+      internalID: -1773797965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 766
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82b25dc1c851b343a1187b3a489829b
+      internalID: -681523301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeVine_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 760
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacc7de70aefd8f4c89fc3b87a6d5103
+      internalID: -603783367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3315c1750bad5ff4d96868fcb00d04b3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      LargeVine_0: 506308521
+      LargeVine_1: 1378449974
+      LargeVine_10: -1266969860
+      LargeVine_11: 1065550722
+      LargeVine_12: 194318813
+      LargeVine_13: 191804298
+      LargeVine_14: 491064843
+      LargeVine_15: 651591207
+      LargeVine_16: 1634051511
+      LargeVine_17: -1701020555
+      LargeVine_18: 1892641316
+      LargeVine_19: -1321307144
+      LargeVine_2: -1495187557
+      LargeVine_20: 302201462
+      LargeVine_21: -343795110
+      LargeVine_22: -1222212825
+      LargeVine_23: -748563371
+      LargeVine_24: -829276497
+      LargeVine_25: -1773797965
+      LargeVine_26: -681523301
+      LargeVine_27: -603783367
+      LargeVine_3: -385204850
+      LargeVine_4: -1555124680
+      LargeVine_5: 33684501
+      LargeVine_6: 1457827908
+      LargeVine_7: 855782200
+      LargeVine_8: 32072661
+      LargeVine_9: -461978622
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

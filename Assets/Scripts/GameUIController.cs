@@ -61,7 +61,7 @@ public class GameUIController : MonoBehaviour
         gameoverRetryButton = root.Q<Button>("gameover-retry-button");
 
         gameoverRetryButton.clicked += RetryCurrentLevel;
-        PlayerStats.Instance.OnPlayerDeath += ShowGameoverMenu;
+        PlayerStats.Instance.AfterPlayerDeathAnim += ShowGameoverMenu;
 
         // HUD
         HUDContainer = root.Q<VisualElement>("hud-container");
@@ -112,7 +112,7 @@ public class GameUIController : MonoBehaviour
         DoorPortal.OnPlayerWin -= ShowWinMenu;
         PlayerStats.Instance.OnKeyCollect -= UpdateKeyCountDisplay;
         PlayerStats.Instance.OnDamageInflicted -= UpdateHealthBar;
-        PlayerStats.Instance.OnPlayerDeath -= ShowGameoverMenu;
+        PlayerStats.Instance.AfterPlayerDeathAnim -= ShowGameoverMenu;
         pauseAction.performed -= TogglePauseMenu;
     }
 
@@ -134,12 +134,14 @@ public class GameUIController : MonoBehaviour
 
         if (isPaused)
         {
+            AudioManager.Instance.PauseMusic();
             AudioManager.Instance.PlaySFX(SoundType.PauseGame);
             Time.timeScale = 0f;
             pauseMenuContainer.RemoveFromClassList("hidden");
         }
         else
         {
+            AudioManager.Instance.UnpauseMusic();
             AudioManager.Instance.PlaySFX(SoundType.ResumeGame);
             Time.timeScale = 1f;
             pauseMenuContainer.AddToClassList("hidden");
