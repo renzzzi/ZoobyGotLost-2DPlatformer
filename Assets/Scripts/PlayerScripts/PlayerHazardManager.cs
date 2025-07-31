@@ -21,7 +21,7 @@ public class PlayerHazardManager : MonoBehaviour
         }
     }
 
-    public void EnterHazard(HazardType hazardType, int minDamage, int maxDamage, float damageInterval)
+    public void EnterHazard(HazardType hazardType, int minDamage, int maxDamage, float damageInterval, bool dealDamageInstantly)
     {
         if (PlayerStats.Instance.getIsDead()) return;
 
@@ -34,7 +34,7 @@ public class PlayerHazardManager : MonoBehaviour
 
         if (activeHazardCount[hazardType] == 1)
         {
-            activeHazardCoroutines[hazardType] = StartCoroutine(DamageOverTime(minDamage, maxDamage, damageInterval));
+            activeHazardCoroutines[hazardType] = StartCoroutine(DamageOverTime(minDamage, maxDamage, damageInterval, dealDamageInstantly));
         }
     }
 
@@ -58,9 +58,13 @@ public class PlayerHazardManager : MonoBehaviour
     }
 
 
-    private IEnumerator DamageOverTime(int minDamage, int maxDamage, float damageInterval)
+    private IEnumerator DamageOverTime(int minDamage, int maxDamage, float damageInterval, bool dealDamageInstantly)
     {
-        yield return new WaitForSeconds(damageInterval * 0.4f);
+        if (!dealDamageInstantly)
+        {
+            yield return new WaitForSeconds(damageInterval * 0.4f);
+        }
+
         while (!PlayerStats.Instance.getIsDead())
         {
             int randomDamage = Random.Range(minDamage, maxDamage + 1);

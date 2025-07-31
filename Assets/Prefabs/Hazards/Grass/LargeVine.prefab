@@ -185,6 +185,7 @@ MonoBehaviour:
   maxDamage: 15
   damageInterval: 1
   hazardType: 3
+  dealDamageInstantly: 1
 --- !u!114 &3749018511301559898
 MonoBehaviour:
   m_ObjectHideFlags: 0

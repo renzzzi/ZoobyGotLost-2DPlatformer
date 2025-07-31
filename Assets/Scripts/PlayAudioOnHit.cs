@@ -5,6 +5,11 @@ public class PlayAudioOnHit : MonoBehaviour
     [SerializeField] private AudioClip audioClip;
     private AudioSource audioSource;
 
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnEnable()
     {
         PlayerStats.Instance.OnDamageInflicted += PlayAudio;
