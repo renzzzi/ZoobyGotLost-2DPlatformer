@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Vector2 groundCheckSize = new Vector2(0.5f, 0.1f);
+    [SerializeField] private Vector2 groundCheckSize;
 
     // Stores all the settings that involves making the jumps feel good and responsive
     [Header("Jump Tuning")]
@@ -240,7 +240,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Draws a wireframe box in the scene to visualize the ground check area
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         if (groundCheck == null) return;
         Gizmos.color = Color.green;

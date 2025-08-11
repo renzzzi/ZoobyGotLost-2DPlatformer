@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4b68b1bfad1946c449102ce5ec05bbb5
+guid: 989afcbdba4439f458310cfa2065b777
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5410075019201813385
-    second: InvisibleSpike_0
+      213: -5221408176509849260
+    second: MetalVent_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,28 +126,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: InvisibleSpike_0
+      name: MetalVent_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.125}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 2, y: 1}
-        - {x: 0, y: 3}
-        - {x: -2, y: 1}
-        - {x: -4, y: -8}
-        - {x: 4, y: -8}
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4517fcb7de4d987b0800000000000000
+      internalID: -5221408176509849260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalVent_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 774e2401f6d8be4b0800000000000000
-      internalID: -5410075019201813385
+      spriteID: d3b93fb560ad8a847afef3deda475f71
+      internalID: -1280613879
       vertices: []
       indices: 
       edges: []
@@ -156,7 +173,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4b105cee5f4304742bcf84941b8bc6db
+    spriteID: 8f6142e7b1838004aa9a4f4774c98eb1
     internalID: 0
     vertices: []
     indices: 
@@ -164,9 +181,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      InvisibleSpike_0: -5410075019201813385
+      MetalVent_0: -5221408176509849260
+      MetalVent_1: -1280613879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

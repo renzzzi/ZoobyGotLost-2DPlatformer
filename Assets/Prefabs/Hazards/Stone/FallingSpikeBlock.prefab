@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1222586369906785526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.5, y: 5.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingSpikePrefab: {fileID: 1856694789748287479, guid: 296c91402eeee904d851d6161f8a5a4d, type: 3}
-  fallingSpikeAnimator: {fileID: 0}
   warningDuration: 0.2
   minIntervalDuration: 0.6
   maxIntervalDuration: 1.5

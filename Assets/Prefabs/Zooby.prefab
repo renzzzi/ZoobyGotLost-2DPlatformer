@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: -7505350420317126212}
   - component: {fileID: 6847071667441260990}
   - component: {fileID: 3696173785102554870}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zooby
   m_TagString: Player
   m_Icon: {fileID: 0}
