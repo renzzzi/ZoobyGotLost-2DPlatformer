@@ -34,7 +34,7 @@ public class PlayerHazardManager : MonoBehaviour
 
         if (activeHazardCount[hazardType] == 1)
         {
-            activeHazardCoroutines[hazardType] = StartCoroutine(DamageOverTime(minDamage, maxDamage, damageInterval, dealDamageInstantly));
+            activeHazardCoroutines[hazardType] = StartCoroutine(DealDamage(minDamage, maxDamage, damageInterval, dealDamageInstantly));
         }
     }
 
@@ -58,7 +58,7 @@ public class PlayerHazardManager : MonoBehaviour
     }
 
 
-    private IEnumerator DamageOverTime(int minDamage, int maxDamage, float damageInterval, bool dealDamageInstantly)
+    private IEnumerator DealDamage(int minDamage, int maxDamage, float damageInterval, bool dealDamageInstantly)
     {
         if (!dealDamageInstantly)
         {

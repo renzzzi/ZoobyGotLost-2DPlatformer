@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TriggerSlowPlayer : MonoBehaviour
+public class TriggerPlayerSlow : MonoBehaviour
 {
     [Header("Slowdown Settings")]
     [Tooltip("How long the slowdown effect should last in seconds.")]
@@ -16,14 +16,14 @@ public class TriggerSlowPlayer : MonoBehaviour
 
     private bool hasBeenTriggered = false;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (triggerOnce && hasBeenTriggered)
         {
             return;
         }
 
-        if (other.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             PlayerController.Instance.TriggerSlowPlayer(slowDuration, slowMagnitude);
 
