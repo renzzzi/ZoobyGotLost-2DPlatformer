@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6050349816193068363}
   - component: {fileID: -2605772413614049904}
   m_Layer: 3
-  m_Name: WindCreation
+  m_Name: WindCreationRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 5804092981152597102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 3, z: 0}
+  m_LocalPosition: {x: 0.5, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035a93280ad2a8f4eae26f78cc95ad52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strongVentWindsPrefab: {fileID: 3540023144060512277, guid: c684c115fadbb1946b3ef7ffa11d519c, type: 3}
-  minIntervalDuration: 0.15
-  maxIntervalDuration: 0.25
+  strongVentWindsPrefab: {fileID: 3540023144060512277, guid: d763d0a172591584bbe8bbf33e7aa1ba, type: 3}
+  minIntervalDuration: 0.07
+  maxIntervalDuration: 0.1

@@ -2,14 +2,19 @@ using UnityEngine;
 
 public class VentWindMovement : MonoBehaviour
 {
-    [SerializeField] private Transform windDeletionTransform;
+    [SerializeField] private Vector2 moveDirection;
     [SerializeField] private float minMovementSpeed;
     [SerializeField] private float maxMovementSpeed;
+    private float finalMovementSpeed;
+
+
+    private void Awake()
+    {
+        finalMovementSpeed = Random.Range(minMovementSpeed, maxMovementSpeed);
+    }
 
     private void Update()
     {
-        Vector2 targetPosition = new (windDeletionTransform.position.x, transform.position.y);
-        float finalMovementSpeed = Random.Range(minMovementSpeed, maxMovementSpeed);
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, finalMovementSpeed * Time.deltaTime);
+        transform.Translate(moveDirection.normalized * finalMovementSpeed * Time.deltaTime);
     }
 }
