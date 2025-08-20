@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,16 +133,20 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 95
-        height: 95
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
       bones: []
       spriteID: 938d1015664e31f50800000000000000
       internalID: 6851070586257528889
@@ -154,20 +158,440 @@ TextureImporter:
       name: CausticFumes_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 0
-        width: 97
-        height: 96
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
       bones: []
       spriteID: da2002fe3a96bb2f0800000000000000
       internalID: -956054343073660243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf1d09e5ce1ed44e9375327933b87e3
+      internalID: -629581045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9896096ab7c0fb84a93780c331bd7f1b
+      internalID: -420323793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e497b06b4e884d0488e112a117ebd210
+      internalID: 700489611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0220c7f5ef1818349b07826180803bd1
+      internalID: 2112586747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afa6a904f28a1f4197e9076c5f7f093
+      internalID: -215776496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e854f3f8105228f429ac791fc9a3cc3c
+      internalID: 447803673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ade203cad10ea4da16422610412b83
+      internalID: -426266941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6106d627fda04b4584cb9fcc9075a19
+      internalID: 365262622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: de49d2736cbbd4a478d79d05ea0138e7
+      internalID: -433501798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace49ba0ae368a3489b4b0bae5af651f
+      internalID: -262292082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c99d5986669ce4bb3c62c49d6268b4
+      internalID: -1869361909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812ac7f8ec26ece4d84a1bcef22d3d1b
+      internalID: -372488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41ebb5667eb63f47b3756097da6dc6b
+      internalID: -497613792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f56ef085c363444aed80997ee46c66
+      internalID: 1749953016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ac0c35927f7934f99a8a59ab4335fd
+      internalID: -1382931474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticFumes_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: 11}
+        - {x: -10, y: 11}
+        - {x: -10, y: -11}
+        - {x: 11, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e8735603d181b4bbef6f8c05f2ec17
+      internalID: 1980392029
       vertices: []
       indices: 
       edges: []
@@ -176,7 +600,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8112e32dfefb6904bb65d6ce2e588653
     internalID: 0
     vertices: []
     indices: 
@@ -184,10 +608,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       CausticFumes_0: 6851070586257528889
       CausticFumes_1: -956054343073660243
+      CausticFumes_10: -433501798
+      CausticFumes_11: -262292082
+      CausticFumes_12: -1869361909
+      CausticFumes_13: -372488
+      CausticFumes_14: -497613792
+      CausticFumes_15: 1749953016
+      CausticFumes_16: -1382931474
+      CausticFumes_17: 1980392029
+      CausticFumes_2: -629581045
+      CausticFumes_3: -420323793
+      CausticFumes_4: 700489611
+      CausticFumes_5: 2112586747
+      CausticFumes_6: -215776496
+      CausticFumes_7: 447803673
+      CausticFumes_8: -426266941
+      CausticFumes_9: 365262622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

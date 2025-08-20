@@ -18,5 +18,5 @@ public enum HazardType
     ElectricBeams, ElectrifiedFloor, StrongVentWinds, LargeMetalSpikes, Crushers,
 
     // Rubber
-    Acid, BlackGoo, Landmine, Tar,
+    Acid, BlackGoo, Landmine, Tar, CausticFumes
 }

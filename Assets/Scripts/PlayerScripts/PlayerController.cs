@@ -7,31 +7,27 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance { get; private set; }
 
-    /*
-    // Functions to control the player by other scripts
-    [Header("Slowdown Effect Settings")]
-    [SerializeField] private float slowDuration;
-    [Tooltip("The lower the value, the slower. Vice versa.")]
-    [Range(0f, 1f)]
-    [SerializeField] private float slowMagnitude;
-    */
+    // Trigger Slow
     private float originalGravity;
     private Coroutine slowPlayerCoroutine;
+    private bool isSlowed = false;
 
-    private IEnumerator SlowdownPlayer(float slowDuration, float slowMagnitude)
+    private IEnumerator SlowdownPlayer(float slowMagnitude, float slowDuration)
     {
-        float gravityMultiplier = 1f + slowMagnitude;
-
+        float gravityMultiplier = 2f - slowMagnitude;
         currentSpeed = baseSpeed * slowMagnitude;
         rigidBody.gravityScale = originalGravity * gravityMultiplier;
         animator.speed = slowMagnitude;
 
-        yield return new WaitForSeconds(slowDuration);
+        while (isSlowed)
+        {
+            yield return new WaitForSeconds(slowDuration);
+        }
 
+        yield return new WaitForSeconds(slowDuration);
         currentSpeed = baseSpeed;
         rigidBody.gravityScale = originalGravity;
         animator.speed = 1f;
-        
         slowPlayerCoroutine = null;
     }
 
@@ -41,9 +37,25 @@ public class PlayerController : MonoBehaviour
         {
             StopCoroutine(slowPlayerCoroutine);
         }
-
-        slowPlayerCoroutine = StartCoroutine(SlowdownPlayer(slowDuration, slowMagnitude));
+        isSlowed = true;
+        slowPlayerCoroutine = StartCoroutine(SlowdownPlayer(slowMagnitude, slowDuration));
     }
+
+    public void StopSlowPlayer()
+    {
+        if (slowPlayerCoroutine != null)
+        {
+            isSlowed = false;
+        }
+    }
+
+    // Launched by Launchpad
+    private void LaunchPlayer(float launchMagnitude)
+    {
+        rigidBody.linearVelocity = new(rigidBody.linearVelocity.x, 0);
+        rigidBody.AddForce(new Vector2(0, launchMagnitude), ForceMode2D.Impulse);
+    }
+
 
     // All the components
     [Header("Components")]
@@ -125,12 +137,14 @@ public class PlayerController : MonoBehaviour
     {
         moveAction.Enable();
         jumpAction.Enable();
+        LaunchpadController.OnLaunch += LaunchPlayer;
     }
 
     private void OnDisable()
     {
         moveAction.Disable();
         jumpAction.Disable();
+        LaunchpadController.OnLaunch -= LaunchPlayer;
     }
 
     // Events for SFX

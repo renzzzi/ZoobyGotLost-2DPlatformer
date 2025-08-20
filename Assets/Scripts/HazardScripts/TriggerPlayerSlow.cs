@@ -10,27 +10,19 @@ public class TriggerPlayerSlow : MonoBehaviour
     [Range(0.0f, 1.0f)]
     [SerializeField] private float slowMagnitude;
 
-    [Header("Trigger Behavior")]
-    [Tooltip("If checked, this trigger will only activate once.")]
-    [SerializeField] private bool triggerOnce = false;
-
-    private bool hasBeenTriggered = false;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (triggerOnce && hasBeenTriggered)
-        {
-            return;
-        }
-
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerController.Instance.TriggerSlowPlayer(slowDuration, slowMagnitude);
+        }
+    }
 
-            if (triggerOnce)
-            {
-                hasBeenTriggered = true;
-            }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerController.Instance.StopSlowPlayer();
         }
     }
 }

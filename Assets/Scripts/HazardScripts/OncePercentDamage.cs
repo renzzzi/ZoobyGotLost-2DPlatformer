@@ -8,8 +8,8 @@ public class OncePercentDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (hasTriggered) return;
-
+        if (hasTriggered && !this.enabled) return;
+   
         if (collision.gameObject.CompareTag("Player"))
         {
             float damageBasedOnHealth = PlayerStats.Instance.GetHealth() * percentOfDamage;

@@ -6,8 +6,8 @@ public class PlayerHazardManager : MonoBehaviour
 {
     public static PlayerHazardManager Instance {  get; private set; }
    
-    private Dictionary<HazardType, int> activeHazardCount = new Dictionary<HazardType, int>();
-    private Dictionary<HazardType, Coroutine> activeHazardCoroutines = new Dictionary<HazardType, Coroutine>();
+    private Dictionary<HazardType, int> activeHazardCount = new();
+    private Dictionary<HazardType, Coroutine> activeHazardCoroutines = new();
 
     private void Awake()
     {
