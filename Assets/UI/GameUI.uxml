@@ -1,36 +1,38 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/GameUIStyle.uss?fileID=7433441132597879392&amp;guid=3cf00ee86669c9e49aeaff15cb2b9ca8&amp;type=3#GameUIStyle" />
+    <Style src="project://database/Assets/UI/GameUIStyle.uss?fileID=7433441132597879392&amp;guid=3cf00ee86669c9e49aeaff15cb2b9ca8&amp;type=3" />
     <Style src="project://database/Assets/UI/UniversalStyle.uss?fileID=7433441132597879392&amp;guid=d90460473bce43f4e91d87bcc18520ab&amp;type=3#UniversalStyle" />
     <ui:VisualElement name="root-container" style="flex-grow: 1;">
         <ui:VisualElement name="hud-container" style="flex-grow: 1;">
-            <ui:VisualElement name="score-container" enabled="true" style="flex-grow: 0;">
-                <ui:Label text="Keys:" name="keys-label" enabled="true" />
-                <ui:Label text="0" name="score-count" />
-                <ui:Label text="|" name="score-separator" />
-                <ui:Label text="5" name="score-total" />
+            <ui:VisualElement name="score-container" enabled="true">
+                <ui:Label text="0" name="score-count" enable-rich-text="true" class="secondary-text" />
+                <ui:VisualElement name="key-container" style="background-image: url(&quot;project://database/Assets/Sprites/Key.png?fileID=1694913177206695654&amp;guid=1ccb0a444904734409019b2b308203b7&amp;type=3#Key_0&quot;);" />
             </ui:VisualElement>
-            <ui:VisualElement name="health-bar" enabled="true">
-                <ui:VisualElement name="health-bar-fill" style="flex-grow: 1;" />
-                <ui:Label text="100" name="health-bar-value" />
+            <ui:VisualElement name="health-bar-container">
+                <ui:VisualElement name="health-bar-background" enabled="true">
+                    <ui:VisualElement name="health-bar-fill" style="background-image: none;" />
+                    <ui:Label text="100" name="health-bar-value" class="secondary-text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="health-heart-container" style="background-image: url(&quot;project://database/Assets/Sprites/UI/HealthHeart.png?fileID=-4422588465013671760&amp;guid=58386e4d2c483024a81525b2aae6e260&amp;type=3#HealthHeart_0&quot;);" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="pause-menu-container" class="menu hidden" style="flex-grow: 1;">
-            <ui:Label text="GAME PAUSED" name="pause-title" class="title" />
-            <ui:Button text="Resume" name="pause-resume-button" class="button" />
-            <ui:Button text="Back to Main Menu" name="pause-back-button" class="button back" />
-            <ui:Button text="Exit to Desktop" name="pause-exit-button" class="button exit" />
+        <ui:VisualElement name="win-menu-container" class="hidden menu-overlay" style="flex-grow: 1;">
+            <ui:Label text="YOU WIN!" name="win-title" class="title primary-text" />
+            <ui:Button name="win-next-level-button" class="button next-level-button" />
+            <ui:Button name="win-menu-button" class="button menu menu-button" />
+            <ui:Button name="win-quit-button" class="button quit-button quit" />
         </ui:VisualElement>
-        <ui:VisualElement name="win-menu-container" class="menu hidden" style="flex-grow: 1;">
-            <ui:Label text="YOU WIN!" name="win-title" class="title" />
-            <ui:Button text="Next Level" name="win-next-level-button" class="button" />
-            <ui:Button text="Back to Main Menu" name="win-back-button" class="button back" />
-            <ui:Button text="Exit to Desktop" name="win-exit-button" class="button exit" />
+        <ui:VisualElement name="gameover-menu-container" class="hidden menu-overlay" style="flex-grow: 1;">
+            <ui:Label text="GAME OVER" name="gameover-title" class="title primary-text" />
+            <ui:Button name="gameover-retry-button" class="button retry-button retry" />
+            <ui:Button name="gameover-menu-button" class="button menu menu-button" />
+            <ui:Button name="gameover-quit-button" class="button quit-button quit" />
         </ui:VisualElement>
-        <ui:VisualElement name="gameover-menu-container" class="menu hidden" style="flex-grow: 1;">
-            <ui:Label text="GAME OVER" name="gameover-title" class="title" />
-            <ui:Button text="Retry" name="gameover-retry-button" class="button" />
-            <ui:Button text="Back to Main Menu" name="gameover-back-button" class="button back" />
-            <ui:Button text="Exit to Desktop" name="gameover-exit-button" class="button exit" />
+        <ui:VisualElement name="pause-menu-container" class="menu-overlay hidden" style="flex-grow: 1;">
+            <ui:Label text="GAME PAUSED" name="pause-title" class="title primary-text" />
+            <ui:Button name="pause-resume-button" class="button resume-button" />
+            <ui:Button name="pause-retry-button" class="button retry-button retry" />
+            <ui:Button name="pause-menu-button" class="button menu-button menu" />
+            <ui:Button name="pause-quit-button" class="button quit-button quit" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

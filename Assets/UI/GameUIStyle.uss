@@ -1,3 +1,9 @@
+:root {
+    --ui-background: rgba(20, 20, 20, 0.95);
+}
+
+/* HUD */
+
 #hud-container {
     flex-direction: row;
     justify-content: space-between;
@@ -7,45 +13,68 @@
 }
 
 #score-container {
+    width: 230px;
+    height: 130px;
+    justify-content: space-between;
     flex-direction: row;
-    align-items: center;
-    width: 300px;
-}
-
-#score-container Label {
-    font-size: 40px;
-    text-shadow: 3px 5px 2px rgba(20, 20, 20, 0.4);
-    -unity-font-style: bold;
-    color: whitesmoke;
     margin-left: 20px;
 }
 
-#health-bar {
-    width: 40%;
-    height: 50px;
-    background-color: rgba(20, 20, 20, 0.8);
-    border-radius: 5px;
-    padding: 6px;
-    overflow: hidden;
-    flex: none;
-    margin-top: 7px;
-    margin-right: 20px;
+#score-count {
+    width: 50px;
+    height: 100%;
 }
 
-#health-bar-fill {
-    background-color: red;
-    width: 100%;
+#key-container {
+    width: 120px;
     height: 100%;
-    border-radius: 3px;
-    transition: width 0.2s ease-in-out;
+}
+
+#health-bar-container {
+    width: 600px;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-grow: 0;
+    margin-top: 21px;
+    margin-right: 21px;
+}
+
+#health-heart-container {
+    -unity-background-scale-mode: stretch-to-fill background-repeat no-repeat;
+    width: 110px;
+    height: 100%;
+    flex-grow: 0;
 }
 
 #health-bar-value {
     position: absolute;
-    color: whitesmoke;
-    font-size: 30px;
-    left: 46%;
-    top: 0;
-    -unity-font-style: bold;
-    text-shadow: 3px 2px 4px rgba(20, 20, 20, 0.7);
+    top: 30%;
+    left: 40%;
+    color: var(--warm-cream);
+    width: 70px;
+    height: 30px;
+    font-size: 60px;
 }
+
+#health-bar-background {
+    width: 350px;
+    height: 100%;
+    background-color: var(--ui-background);
+    border-radius: 7px;
+    padding: 10px;
+    flex-grow: 0;
+    margin-left: 20px;
+}
+
+#health-bar-fill {
+    background-color: var(--primary-purple);
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    transition: width 0.2s ease-in-out;
+}
+
+/* WIN MENU */
+

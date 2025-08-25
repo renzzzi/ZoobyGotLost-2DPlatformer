@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 public class GameUIController : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class GameUIController : MonoBehaviour
     private Label keyCount;
     private VisualElement healthBarFill;
     private Label healthBarValue;
+
+    private List<Button> allButtons;
+    private List<Button> allQuitButtons;
+    private List<Button> allMenuButtons;
+    private List<Button> allRetryButtons;
 
     // Input System Variables
     private PlayerInput playerInput; // Reference to the PlayerInput component
@@ -48,19 +54,16 @@ public class GameUIController : MonoBehaviour
         pauseMenuContainer = root.Q<VisualElement>("pause-menu-container");
         pauseResumeButton = root.Q<Button>("pause-resume-button");
 
-        pauseResumeButton.clicked += ResumeGame;
+        pauseResumeButton.RegisterCallback<ClickEvent>(e => ResumeGame());
 
         // Win Menu
         winMenuContainer = root.Q<VisualElement>("win-menu-container");
         winNextLevelButton = root.Q<Button>("win-next-level-button");
 
-        winNextLevelButton.clicked += GoToNextLevel;
+        winNextLevelButton.RegisterCallback<ClickEvent>(e => NextLevel());
 
         // Gameover Menu
         gameoverMenuContainer = root.Q<VisualElement>("gameover-menu-container");
-        gameoverRetryButton = root.Q<Button>("gameover-retry-button");
-
-        gameoverRetryButton.clicked += RetryCurrentLevel;
         PlayerStats.Instance.AfterPlayerDeathAnim += ShowGameoverMenu;
 
         // HUD
@@ -71,31 +74,40 @@ public class GameUIController : MonoBehaviour
         PlayerStats.Instance.OnKeyCollect += UpdateKeyCountDisplay;
         PlayerStats.Instance.OnDamageInflicted += UpdateHealthBar;
 
-        // SFX for buttons
-        var allSFXButtons = root.Query<Button>(null, "button").ToList();
+        // SFX and Hover Cursor for buttons
+        allButtons = root.Query<Button>(null, "button").ToList();
 
-        foreach (var button in allSFXButtons)
+        foreach (var button in allButtons)
         {
-            button.clicked += ButtonClickSFX;
-            button.RegisterCallback<PointerEnterEvent>(e => ButtonHoverSFX());
+            button.RegisterCallback<ClickEvent>(e => ButtonClickSFX());
+            button.RegisterCallback<PointerEnterEvent>(e => ButtonHoverEnter());
+            button.RegisterCallback<PointerLeaveEvent>(e => ButtonHoverExit());
         }
 
-        // Exit Buttons
-        var allExitButtons = root.Query<Button>(null, "exit").ToList();
+        // Quit Buttons
+        allQuitButtons = root.Query<Button>(null, "quit").ToList();
 
-        foreach (var button in allExitButtons)
+        foreach (var button in allQuitButtons)
         {
-            button.clicked += ExitGame;
+            button.RegisterCallback<ClickEvent>(e => QuitGame());
         }
 
-        // Back Buttons
-        var allBackButtons = root.Query<Button>(null, "back").ToList();
-        /*as
-        foreach (var button in allBackButtons)
+        // Menu Buttons
+        allMenuButtons = root.Query<Button>(null, "menu").ToList();
+
+        foreach (var button in allMenuButtons)
         {
-            button.clicked += 
+            button.RegisterCallback<ClickEvent>(e => GoToMainMenu());
         }
-        */
+  
+
+        // Retry Buttons
+        allRetryButtons = root.Query<Button>(null, "retry").ToList();
+        foreach ( var button in allRetryButtons)
+        {
+            button.RegisterCallback<ClickEvent>(e => RetryLevel());
+        }
+
         // Extras
         DoorPortal.OnPlayerWin += ShowWinMenu;
         pauseAction.performed += TogglePauseMenu;
@@ -105,9 +117,30 @@ public class GameUIController : MonoBehaviour
 
     private void OnDisable()
     {
-        pauseResumeButton.clicked -= ResumeGame;
-        winNextLevelButton.clicked -= GoToNextLevel;
-        gameoverRetryButton.clicked -= RetryCurrentLevel;
+        pauseResumeButton.UnregisterCallback<ClickEvent>(e => ResumeGame());
+        winNextLevelButton.UnregisterCallback<ClickEvent>(e => NextLevel());
+
+        foreach (var button in allButtons)
+        {
+            button.UnregisterCallback<ClickEvent>(e => ButtonClickSFX());
+            button.UnregisterCallback<PointerEnterEvent>(e => ButtonHoverEnter());
+            button.UnregisterCallback<PointerLeaveEvent>(e => ButtonHoverExit());
+        }
+
+        foreach (var button in allQuitButtons)
+        {
+            button.RegisterCallback<ClickEvent>(e => QuitGame());
+        }
+
+        foreach (var button in allMenuButtons)
+        {
+            button.UnregisterCallback<ClickEvent>(e => GoToMainMenu());
+        }
+
+        foreach (var button in allRetryButtons)
+        {
+            button.UnregisterCallback<ClickEvent>(e => RetryLevel());
+        }
 
         DoorPortal.OnPlayerWin -= ShowWinMenu;
         PlayerStats.Instance.OnKeyCollect -= UpdateKeyCountDisplay;
@@ -116,18 +149,38 @@ public class GameUIController : MonoBehaviour
         pauseAction.performed -= TogglePauseMenu;
     }
 
-    private void RetryCurrentLevel()
+    // For resume buttons
+    private void ResumeGame()
+    {
+        SetPauseState(false);
+    }
+
+    // For retry buttons
+    private void RetryLevel()
     {
         GameManager.Instance.RetryLevel();
         AudioManager.Instance.RestartBackgroundMusic();
     }
 
-    private void GoToNextLevel()
+    // For menu buttons
+    private void GoToMainMenu()
+    {
+        GameManager.Instance.LoadMainMenu();
+    }
+
+    // For quit buttons
+    private void QuitGame()
+    {
+        Debug.Log("Quit button clicked!");
+        Application.Quit();
+    }
+
+    private void NextLevel()
     {
         GameManager.Instance.LoadNextLevel();
         AudioManager.Instance.RestartBackgroundMusic();
     }
-
+    
     private void SetPauseState(bool pauseState)
     {
         isPaused = pauseState;
@@ -148,14 +201,10 @@ public class GameUIController : MonoBehaviour
         }
     }
 
+    // For pausing when pressing the escape key
     private void TogglePauseMenu(InputAction.CallbackContext _)
     {
         SetPauseState(!isPaused);
-    }
-
-    private void ResumeGame()
-    {
-        SetPauseState(false);
     }
 
     private void ShowWinMenu()
@@ -168,12 +217,6 @@ public class GameUIController : MonoBehaviour
     {
         Time.timeScale = 0f;
         gameoverMenuContainer.RemoveFromClassList("hidden");
-    }
-
-    private void ExitGame()
-    {
-        Debug.Log("Exit button clicked!");
-        Application.Quit();
     }
 
     private void UpdateKeyCountDisplay(int newKeyCount)
@@ -208,8 +251,14 @@ public class GameUIController : MonoBehaviour
         AudioManager.Instance.PlaySFX(SoundType.ButtonClick);
     }
 
-    private void ButtonHoverSFX()
+    private void ButtonHoverEnter()
     {
         AudioManager.Instance.PlaySFX(SoundType.ButtonHover);
+        CursorManager.Instance.SetCursorState(CursorManager.CursorState.Hover);
+    }
+
+    private void ButtonHoverExit()
+    {
+        CursorManager.Instance.SetCursorState(CursorManager.CursorState.Default);
     }
 }
