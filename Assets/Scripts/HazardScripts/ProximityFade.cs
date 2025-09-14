@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ProximityFade : MonoBehaviour
 {
-    [SerializeField] private Transform playerTransform;
+    private GameObject playerObject;
     [Tooltip("Where the hazard reach maximum visibility")]
     [SerializeField] private float minVisibilityDistance;
     [Tooltip(" Where the hazard starts to become visible")]
@@ -12,11 +12,12 @@ public class ProximityFade : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerObject = GameObject.FindWithTag("Player");
     }
 
     private void Update()
     {
-        float currentDistance = Vector3.Distance(transform.position, playerTransform.position);
+        float currentDistance = Vector3.Distance(transform.position, playerObject.transform.position);
 
         /* Calculates the percentage of completion from the starting point(FirstParam)
          * to the end point(SecondParam)

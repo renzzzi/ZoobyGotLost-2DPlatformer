@@ -42,7 +42,7 @@ public class FallingSpikeController : MonoBehaviour
         {
             timeElapsed += Time.deltaTime;
 
-            float progress = Mathf.Clamp01(timeElapsed / fadeOutDuration);
+            float progress = timeElapsed / fadeOutDuration;
             float newAlpha = Mathf.Lerp(initialAlpha, targetAlpha, progress);
 
             spriteRenderer.color = new Color(initialColor.r, initialColor.g,

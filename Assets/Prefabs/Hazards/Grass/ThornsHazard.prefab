@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422314538892803633}
   - component: {fileID: 6322149230749687886}
+  - component: {fileID: 6352279440596241239}
   - component: {fileID: 5478060585749808403}
   - component: {fileID: 1651534385471288582}
   - component: {fileID: 2298362768614090032}
@@ -94,6 +95,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &6352279440596241239
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227752154955234296}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.37, y: 0.32}
+  m_Radius: 0.14
 --- !u!70 &5478060585749808403
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -128,8 +165,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.018162727, y: -0.11623311}
-  m_Size: {x: 0.44062996, y: 0.7675338}
+  m_Offset: {x: 0.018162727, y: -0.32}
+  m_Size: {x: 0.27, y: 0.35}
   m_Direction: 0
 --- !u!114 &1651534385471288582
 MonoBehaviour:
@@ -143,10 +180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d905b64328e6a7a4eb4f84c9b1ed984b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDamage: 7
-  maxDamage: 11
+  minDamage: 6
+  maxDamage: 9
   damageInterval: 0.4
   hazardType: 0
+  dealDamageInstantly: 1
 --- !u!114 &2298362768614090032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,9 +197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10cba149e9ea9f34bbd945a93bfb9ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowDuration: 0.35
-  slowMagnitude: 0.1
-  triggerOnce: 0
+  slowDuration: 0.2
+  slowMagnitude: 0.18
 --- !u!114 &680392325857348314
 MonoBehaviour:
   m_ObjectHideFlags: 0

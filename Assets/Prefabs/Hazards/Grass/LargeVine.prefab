@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 4746132256905190335}
   - component: {fileID: 8745685889648760653}
   - component: {fileID: 2634583768378475353}
-  - component: {fileID: 852381633668162304}
   - component: {fileID: 4346048656804030370}
   - component: {fileID: 3749018511301559898}
   - component: {fileID: 3508763960532721848}
   - component: {fileID: -2535938122792775261}
   - component: {fileID: 5578097203119447403}
   - component: {fileID: 5852313083854673748}
+  - component: {fileID: 6773974621973627155}
   m_Layer: 0
   m_Name: LargeVine
   m_TagString: Untagged
@@ -129,46 +129,9 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0023326874, y: -1.3770772}
-  m_Size: {x: 1.1684418, y: 1.6737401}
+  m_Offset: {x: 0, y: -2.79}
+  m_Size: {x: 1.1684418, y: 0.77}
   m_Direction: 0
---- !u!70 &852381633668162304
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700801262488356241}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.042136975, y: -2.4783835}
-  m_Size: {x: 1.7501452, y: 0.45644623}
-  m_Direction: 1
 --- !u!114 &4346048656804030370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,11 +144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d905b64328e6a7a4eb4f84c9b1ed984b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDamage: 12
-  maxDamage: 15
-  damageInterval: 1
+  minDamage: 5
+  maxDamage: 7
+  damageInterval: 0.1
   hazardType: 3
-  dealDamageInstantly: 1
+  dealDamageInstantly: 0
 --- !u!114 &3749018511301559898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,9 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10cba149e9ea9f34bbd945a93bfb9ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowDuration: 1
+  slowDuration: 0.6
   slowMagnitude: 0.7
-  triggerOnce: 0
 --- !u!114 &3508763960532721848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,8 +175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d199b9d668721d49ac35f22cbd9c8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpeed: 0.7
-  maxSpeed: 1.2
+  minSpeed: 0.95
+  maxSpeed: 1.4
 --- !u!114 &-2535938122792775261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,3 +318,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &6773974621973627155
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700801262488356241}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -1.09}
+  m_Size: {x: 0.48, y: 2.08}
+  m_Direction: 0

@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Collections.Generic;
 
 public class PlayerGroundAudio : MonoBehaviour
 {
-    [Tooltip("Assign the singular Tilemap that contains all your ground tiles.")]
-    [SerializeField] private Tilemap groundTilemap;
+    [Tooltip("Assign all Tilemaps that contain your ground tiles (e.g., Grass, Wood, Stone tilemaps).")]
+    [SerializeField] private List<Tilemap> groundTilemaps = new List<Tilemap>();
 
     private void OnEnable()
     {
@@ -16,13 +17,12 @@ public class PlayerGroundAudio : MonoBehaviour
     {
         PlayerController.OnGroundHit -= HandleOnGroundHit;
         PlayerController.OnPlayerStep -= HandlePlayerStep;
-
     }
 
     private void HandleOnGroundHit()
     {
         SurfaceType surface = GetSurfaceTypeBelowPlayer();
-    
+
         switch (surface)
         {
             case SurfaceType.Grass:
@@ -81,14 +81,13 @@ public class PlayerGroundAudio : MonoBehaviour
 
     private SurfaceType GetSurfaceTypeBelowPlayer()
     {
-        if (groundTilemap == null)
+        if (groundTilemaps == null || groundTilemaps.Count == 0)
         {
+            Debug.LogWarning("No ground tilemaps assigned to PlayerGroundAudio.");
             return SurfaceType.None;
         }
 
-        // Defines the width of the player's feet
         float footWidth = 0.3f;
-
         Vector3[] checkPoints = new Vector3[3];
         checkPoints[0] = transform.position + new Vector3(0, -0.6f, 0);         // Center
         checkPoints[1] = transform.position + new Vector3(footWidth, -0.6f, 0);  // Right foot
@@ -96,12 +95,17 @@ public class PlayerGroundAudio : MonoBehaviour
 
         foreach (var point in checkPoints)
         {
-            Vector3Int cellPosition = groundTilemap.WorldToCell(point);
-            SolidRuleTile tile = groundTilemap.GetTile<SolidRuleTile>(cellPosition);
-
-            if (tile != null)
+            foreach (var groundTilemap in groundTilemaps)
             {
-                return tile.surfaceType;
+                if (groundTilemap == null) continue; 
+
+                Vector3Int cellPosition = groundTilemap.WorldToCell(point);
+                SolidRuleTile tile = groundTilemap.GetTile<SolidRuleTile>(cellPosition);
+
+                if (tile != null)
+                {
+                    return tile.surfaceType;
+                }
             }
         }
 

@@ -6,9 +6,9 @@ public class PlayerStats : MonoBehaviour
     public static PlayerStats Instance { get; private set; }
 
     [SerializeField] private GameUIController gameUIController;
-    [SerializeField] private float health;
+    [SerializeField] private int maxHealth;
+    [SerializeField] private int currentHealth;
     private Animator playerAnimator;
-    private int keyAmount = 0;
     private bool isDead = false;
 
     private void Awake()
@@ -22,47 +22,47 @@ public class PlayerStats : MonoBehaviour
             Destroy(gameObject);
         }
 
+        currentHealth = maxHealth;
         playerAnimator = GetComponent<Animator>();
     }
 
-    public int GetKeyAmount()
+    public int GetHealth()
     {
-        return keyAmount;
+        return currentHealth;
     }
 
-    public float GetHealth()
+    public void SetHealth(int newHealth)
     {
-        return health;
+        this.currentHealth = newHealth;
     }
 
-    public bool getIsDead()
+    public bool GetIsDead()
     {
         return isDead;
     }
 
-    public event Action<int> OnKeyCollect;
-
-    public void AddKey()
-    {
-        ++keyAmount;
-        OnKeyCollect?.Invoke(keyAmount);
-    }
-
-
-    public event Action<float> OnDamageInflicted;
+    public event Action<int> OnDamageInflicted;
     public void InflictDamage(int damageAmount)
     {
 
-        health -= damageAmount;
-        OnDamageInflicted?.Invoke(health);
+        currentHealth -= damageAmount;
+        OnDamageInflicted?.Invoke(currentHealth);
 
         AudioManager.Instance.PlaySFX(SoundType.Hurt);
         CameraShake.Instance.TriggerShake();
 
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             InitiateDeath();
         }
+    }
+
+    public event Action<int> OnPlayerHealed;
+    public void AddHealth(int newHealth)
+    {
+        AudioManager.Instance.PlaySFX(SoundType.Heal);
+        currentHealth += newHealth;
+        OnPlayerHealed?.Invoke(currentHealth);
     }
 
     public event Action OnPlayerDeath;

@@ -143,6 +143,9 @@ MonoBehaviour:
   - soundType: 24
     clips:
     - {fileID: 8300000, guid: c0aaea8660a4daa4ca1bc5155a641511, type: 3}
+  - soundType: 25
+    clips:
+    - {fileID: 8300000, guid: 4dcf5058eec65104bb2c7ad5d3861900, type: 3}
 --- !u!82 &2575499599817677087
 AudioSource:
   m_ObjectHideFlags: 0

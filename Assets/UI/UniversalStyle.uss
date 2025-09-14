@@ -19,7 +19,7 @@
 
 .secondary-text {
     -unity-font-definition: url("project://database/Assets/Fonts/Jersey20%20Regular%20Bitmap.asset?fileID=11400000&guid=8165746197510154ba6d717a525878f4&type=2#Jersey20 Regular Bitmap");
-    font-size: 96px;
+    font-size: 87px;
     color: var(--warm-cream);
     -unity-text-align: middle-center;
 }
@@ -32,7 +32,7 @@
 }
 
 .menu-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -42,9 +42,27 @@
     justify-content: center;
 }
 
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-background {
+    width: 1100px;
+    height: 700px;
+    background-image: url("project://database/Assets/Sprites/UI/Modal.png?fileID=2800000&guid=56e0347bb5f3de14982c544adb5e552f&type=3#Modal");
+    padding: 80px;
+}
+
+.modal-button-container {
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150px;
+}
+
 .button {
-    background-image: url("project://database/Assets/Sprites/UI/UIButtons.png?fileID=2800000&guid=e285b15dface4f247b368ec9f3c21d44&type=3#UIButtons");
-    -unity-background-scale-mode: scale-and-crop background-repeat no-repeat;
+    -unity-background-scale-mode: scale-and-crop;
+    background-repeat: no-repeat;
     width: 680px;
     height: 170px;
     border-color: rgba(0, 0, 0, 0);
@@ -53,10 +71,17 @@
     margin-bottom: 20px;
     transition: 0.1s ease-out;
     scale: 1 1;
+    background-image: url("project://database/Assets/Sprites/UI/UIButtons.png?fileID=2800000&guid=e285b15dface4f247b368ec9f3c21d44&type=3#UIButtons");
 }
 
 .button:hover {
     scale: 1.07 1.07;
+}
+
+.small-button {
+    width: 408px;
+    height: 102px;
+    background-image: url("project://database/Assets/Sprites/UI/SmallButtons.png?fileID=2800000&guid=5e476eae255e03e45970f744fe844f60&type=3#SmallButtons");
 }
 
 .quit-button {
@@ -91,11 +116,11 @@
     background-position: -4760px 0;
 }
 
-.retry-button {
+.retry-save-button {
     background-position: -5440px 0;
 }
 
-.retry-button:active {
+.retry-save-button:active {
     background-position: -6120px 0;
 }
 
@@ -107,11 +132,11 @@
     background-position: -7480px 0;
 }
 
-.settings-button {
+.retry-level-button {
     background-position: -8160px 0;
 }
 
-.settings-button:active {
+.retry-level-button:active {
     background-position: -8840px 0;
 }
 
@@ -125,4 +150,42 @@
 
 .continue-button-disabled {
     background-position: -10880px 0;
+}
+
+.continue-button-disabled:hover {
+    scale: 1 1;
+}
+
+.about-button {
+    background-position: -11560px 0;
+}
+
+.about-button:active {
+    background-position: -12240px 0;
+}
+
+/* SMALL BUTTONS */
+
+.yes-button {
+    background-position: 0 0;
+}
+
+.yes-button:active {
+    background-position: -408px 0;
+}
+
+.no-button {
+    background-position: -816px 0;
+}
+
+.no-button:active {
+    background-position: -1224px 0;
+}
+
+.back-button {
+    background-position: -1632px 0;
+}
+
+.back-button:active {
+    background-position: -2040px 0;
 }

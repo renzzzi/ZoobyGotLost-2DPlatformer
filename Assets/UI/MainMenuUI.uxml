@@ -1,12 +1,17 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/UniversalStyle.uss?fileID=7433441132597879392&amp;guid=d90460473bce43f4e91d87bcc18520ab&amp;type=3" />
+    <Style src="project://database/Assets/UI/UniversalStyle.uss?fileID=7433441132597879392&amp;guid=d90460473bce43f4e91d87bcc18520ab&amp;type=3#UniversalStyle" />
     <Style src="project://database/Assets/UI/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=ed318a3d54ad00245bd57c3a10676569&amp;type=3#MainMenuStyle" />
     <ui:VisualElement name="root-container" style="flex-grow: 1;">
         <ui:VisualElement name="mainmenu-container" style="flex-grow: 1;">
-            <ui:VisualElement style="flex-grow: 1;" />
+            <ui:VisualElement name="splash-title-container" style="flex-grow: 1;">
+                <ui:VisualElement name="splash-title" style="background-color: rgba(0, 0, 0, 0); background-image: url(&quot;project://database/Assets/Sprites/UI/SplashTitle.png?fileID=2800000&amp;guid=b7edef2e0ddd52e44a808f9390a0554f&amp;type=3#SplashTitle&quot;);" />
+            </ui:VisualElement>
             <ui:VisualElement name="button-container" style="flex-grow: 1;">
-                <ui:Button text="Start" name="play-button" class="button" />
-                <ui:Button text="Exit" name="exit-button" class="button" />
+                <ui:Button name="new-game-button" class="button new-game-button new-game" />
+                <ui:Button name="continue-button" class="button continue-button-disabled" />
+                <ui:Label text="0" name="continue-level-label" class="secondary-text" />
+                <ui:Button name="about-button" class="button about-button about" />
+                <ui:Button name="quit-button" class="button quit-button quit" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

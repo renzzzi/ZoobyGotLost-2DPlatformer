@@ -2,47 +2,27 @@
     --ui-background: rgba(20, 20, 20, 0.95);
 }
 
-/* HUD */
-
 #hud-container {
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     padding: 10px;
 }
 
-#score-container {
-    width: 230px;
-    height: 130px;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-left: 20px;
-}
-
-#score-count {
-    width: 50px;
-    height: 100%;
-}
-
-#key-container {
-    width: 120px;
-    height: 100%;
-}
-
 #health-bar-container {
     width: 600px;
     height: 100px;
-    justify-content: flex-start;
+    margin-top: 24px;
+    margin-left: 24px;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row-reverse;
     flex-grow: 0;
-    margin-top: 21px;
-    margin-right: 21px;
 }
 
 #health-heart-container {
-    -unity-background-scale-mode: stretch-to-fill background-repeat no-repeat;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-repeat: no-repeat;
     width: 110px;
     height: 100%;
     flex-grow: 0;
@@ -76,5 +56,8 @@
     transition: width 0.2s ease-in-out;
 }
 
-/* WIN MENU */
-
+.retry-container {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1400px;
+}
